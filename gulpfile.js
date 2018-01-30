@@ -118,7 +118,7 @@ gulp.task("build", ["clean", "img", "stylesMove", "scriptsMin"], function () {
         .pipe(gulp.dest("dist/libs"));
 });
 
-gulp.task("easy-build", ["clean", "stylesMove", "scriptsMin"], function () {
+gulp.task("fast-build", ["clean", "stylesMove", "scriptsMin"], function () {
 
 	let modifyUrls = gulp.src("dist/css/main.min.css")
 	.pipe(replace("../../../img", "../../img"))
