@@ -1,0 +1,55 @@
+Structure
+---------
+https://sass-guidelin.es/#the-7-1-pattern
+
+base/ - contains global styles, such as resets, typography, colors, etc.
+components/ - contains each self-contained component in its own .scss partial
+layout/ - contains styling for larger layout components; e.g. nav, header, footer, etc.
+pages/ - contains page-specific styling, if necessary
+themes/ - contains styling for different themes
+utils/ - contains global mixins, functions, helper selectors, etc.
+vendors/ - contains 3rd-party styles, mixins, etc.
+main.scss - output file that brings together all of the above parts
+
+Code guide
+-----------
+http://codeguide.academy/html-css.html#css-order
+
+.declaration-order {
+  /* Positioning */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  /* Block model */
+  display: block;
+  float: right;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+
+  /* Typography */
+  font: normal 13px/1.5 "Arial", sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: #333333;
+
+  /* Decoration */
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  opacity: 1;
+
+  /* Animation */
+  transition: color 1s;
+
+  /* Other */
+  will-change: auto;
+}
