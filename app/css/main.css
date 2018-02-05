@@ -1,0 +1,17 @@
+/* Mounting point for all scss files */
+.container {
+  background: lightgray; }
+
+.block1 {
+  width: 100%;
+  height: 150px;
+  background: lightcoral;
+  margin-bottom: 10px; }
+
+.block2 {
+  width: 100%;
+  height: 150px;
+  background: lightblue;
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=main.css.map */
