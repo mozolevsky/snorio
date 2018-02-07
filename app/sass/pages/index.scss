@@ -5,6 +5,7 @@
         background: url('../../img/photos/bgbig@3x.jpg') no-repeat center top;
         background-size: cover;
    }
+   
 
     &__wrapper {
         padding-top: 10px;
@@ -325,7 +326,7 @@
 }
 
 .index-table {
-    width: 1184px;
+    width: 1140px;
     font-size: 12px;
     font-weight: 900;
     line-height: 3.17;
@@ -397,5 +398,121 @@
     &__group-item-text {
         font-size: 14px;
         color: #65718b;
+    }
+}
+
+
+@media (min-width: $md) {
+    .top-index {
+        margin-bottom: 0;
+        background: url('../../img/photos/bgbig@3x.jpg') no-repeat 210px center;
+        background-size: 91%;
+
+        &__bg-desctop {
+            padding-top: 52px;
+            padding-bottom: 30px;
+            background:
+             linear-gradient(90deg, rgba(255,255,255,1) 30%,rgba(255,255,255,0) 70%),
+             linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 70%);
+        }
+
+        &__desc {
+            margin-bottom: 29px;
+        }
+
+        &__btn {
+            margin-bottom: 22px;
+            width: 223px;
+        }
+    }
+
+    .logos {
+        margin-bottom: 0;
+
+        &__container {
+            border-bottom: 1px solid #dee1e5;
+        }
+
+        &__title-wrapper {
+            margin-bottom: 0;
+        }
+    }
+
+    .what-is {
+        background: url('../../img/mocks/group-6@3x.png') no-repeat calc(50% - 300px) top;
+        background-size: auto 356px;
+    }
+
+    .what-included {
+        &__block {
+            margin-bottom: 35px;
+        }
+
+        &__desc {
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            line-height: 1.67;
+        }
+    }
+
+    .guaranteed {
+        margin-bottom: 50px;
+
+        &__bg {
+            padding: 10px 20px 15px;
+            background: url('../../img/other/guaranteed-horizontal.svg') no-repeat center;
+            background-size: 100%;
+        }
+
+        &__desc {
+            margin-bottom: 22px;
+            font-size: 16px;
+        }
+
+        &__logo {
+            margin-top: 22px;
+            width: 262px;
+            height: 207px;
+        }
+    }
+
+    .news-list {
+        &__title {
+            margin-bottom: 10px;
+        }
+
+        &__desc-main {
+            margin-bottom: 60px;
+        }
+
+        &__item {
+            &::after {
+                content: none;
+            }
+        }
+    }
+
+    .compare {
+        &__exercise {
+            &::after {
+                left: auto;
+                right: -70px;
+                bottom: auto;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            &_arrow-expanded {
+                &::after {
+                    left: auto;
+                    right: -70px;
+                    bottom: auto;
+                    top: 50%;
+                    transform: translate(-50%, -50%) rotate(0deg) scale(1, -1);
+                }
+            }
+        }
     }
 }

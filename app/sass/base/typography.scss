@@ -43,13 +43,13 @@ h3 {
     color: $dark-blue;
 }
 
-@media (min-width: $sm) {
+@media (min-width: $md) {
     h1 {
         font-size: 34px;
     }
 
     h3 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 

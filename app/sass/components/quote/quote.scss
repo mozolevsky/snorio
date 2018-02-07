@@ -62,3 +62,26 @@
         }
     }
 }
+
+@media (min-width: $md) {
+    .quote {
+
+        &::before {
+            width: 89px;
+        }
+
+        &::after {
+            width: 89px;
+        }
+
+        &_non-top-line {
+            &::before {
+                content: none;
+            }
+        }
+
+        &__text {
+            font-size: 24px;
+        }
+    }
+}

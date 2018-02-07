@@ -73,3 +73,27 @@
         }
     }
 }
+
+
+@media (min-width: $md) {
+    .blue {
+        &__bg {
+            padding: 36px 0;
+        }
+
+        &__title {
+            width: 100%;
+        }
+
+        &__btn {
+            width: auto;
+            padding: 18px 50px;
+
+            &::after {
+                width: 120%;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+    }
+}

@@ -24,3 +24,29 @@
         line-height: 19px;
     }
 }
+
+@media (min-width: $md) {
+    .header {
+        &__logo {
+            width: 166px;
+        }
+
+        &__chat-text {
+            margin-bottom: 0;
+            margin-right: 16px;
+            padding-left: 25px;
+            font-size: 14px;
+            color: #7a838e;
+            font-weight: 700;
+
+            background: url('../../../img/other/comment.svg') no-repeat left center;
+            background-size: contain;
+        }
+    }
+}
+
+@media (min-width: $xl) {
+    .header {
+        padding: 20px 0;
+    }
+}

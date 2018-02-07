@@ -29,3 +29,12 @@
         }
     }
 }
+
+@media (min-width: $md) {
+    .how-it-works {
+        &__title {
+            width: 100%;
+            text-align: left;
+        }
+    }
+}
