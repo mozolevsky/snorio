@@ -1,0 +1,19 @@
+
+.footer {
+    padding-bottom: 38px;
+    padding-top: 25px;
+    border-top: solid 2px #dee1e5;
+
+    &__logo {
+        margin-bottom: 6px;
+        width: 125px;
+    }
+
+    &__copyright {
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        color: #7a838e;
+    }
+}

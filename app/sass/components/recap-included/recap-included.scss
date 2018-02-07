@@ -1,0 +1,55 @@
+
+.recap-included {
+    margin-bottom: 10px;
+
+    &__title-main {
+        margin-bottom: 31px;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        padding-top: 55px;
+        background-position: top center;
+        background-repeat: no-repeat;
+
+        &_video-icon {
+            background-image: url('../../../img/other/triangle.svg');
+            background-size: 21px 30px;
+        }
+
+        &_calendar-icon {
+            background-image: url('../../../img/other/group-154.svg');
+            background-size: 40px;
+        }
+
+        &_guide-icon {
+            background-image: url('../../../img/other/document.svg');
+            background-size: 30px 40px;
+        }
+
+        &_worksheet-icon {
+            background-image: url('../../../img/other/document-edit.svg');
+            background-size: 40px auto;
+        }
+
+        &_lifetime-icon {
+            background-image: url('../../../img/other/group-155.svg');
+            background-size: 40px auto;
+        }
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.36;
+        margin-bottom: 8px;
+        color: $blue;
+    }
+
+    &__desc {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.38;
+        color: #30435c;
+    }
+}

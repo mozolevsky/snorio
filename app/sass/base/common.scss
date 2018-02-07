@@ -2,3 +2,8 @@
 section {
     margin-bottom: 30px;
 }
+
+.marked {
+    font-weight: 700;
+    @include highlight;
+}

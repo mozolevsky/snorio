@@ -12,14 +12,12 @@
 
 <header class="header">
     <div class="container">
-        <div class="row">
-            <div class="col-8 col-md-6 col-xl-8">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-7 col-md-6 col-xl-8 d-flex align-items-center">
                 <button class="header__burger-icon d-block d-md-none">Menu</button>
-                <div class="header__logo-wrapper">
-                    <img src="img/other/optimum-sleep@3x.png" alt="" class="header__logo img-fluid">
-                </div>
+                <img src="img/other/optimum-sleep@3x.png" alt="" class="header__logo img-fluid">
             </div>
-            <div class="col-4 col-md-6 col-xl-4">
+            <div class="col-5 col-md-6 col-xl-4">
                 <p class="header__chat-text d-none d-md-block">Chat with a Professional</p>
                 <a href="#" class="header__btn">Buy Now</a>
             </div>
@@ -27,7 +25,8 @@
     </div>
 </header>
 
-<section class="counter">
+<!-- temporarily hidden -->
+<section class="counter d-none">
     <div class="container">
         <div class="row justify-content-xl-center">
             <div class="col-12 col-xl-10">
@@ -43,19 +42,22 @@
 </section>
 
 <section class="top-index">
+    <div class="top-index__bg"></div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-7 col-xl-8">
+               <div class="top-index__wrapper">
                 <h1 class="top-index__title text-center text-sm-left">Finally, a natural solution 
-                    to stop snoring that actually works.</h1>
+                    to <span class="top-index__marked">stop snoring</span> that actually works.</h1>
                 <p class="top-index__desc text-center text-sm-left">Reduce your snoring by 60% in 8 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
                 <a href="#" class="top-index__btn">Buy Now →</a>
-                <div class="top-index__logos d-flex justify-content-between">
+                <div class="top-index__logos d-flex justify-content-around">
                     <img src="img/other/group.svg" alt="" class="top-index__logo">
                     <img src="img/other/group-2.svg" alt="" class="top-index__logo">
-                    <img src="img/other/group-3@3x.jpg" height="60" alt="" class="top-index__logo">
-                    <img src="img/other/group-4.svg" alt="" class="top-index__logo">
+                    <img src="img/other/group.svg" class="top-index__logo">
+                    <img src="img/other/group-4.svg" alt="" class="top-index__logo top-index__logo_long">
                 </div>
+               </div>
             </div>
         </div>
     </div>
@@ -66,12 +68,15 @@
         <div class="row">
             <div class="col">
                 <div class="logos__logos-wrapper">
-                    <p class="logos__title text-center">Anti-Snoring exercises featured on:</p>
-                    <div class="logos__container d-flex flex-wrap justify-content-around align-items-center">
+                    <div class="logos__title-wrapper d-flex justify-content-center">
+                        <p class="logos__title text-center">Anti-Snoring exercises featured on:</p>
+                    </div>
+                    <div class="logos__container d-flex flex-wrap justify-content-center  justify-content-md-around align-items-center">
                         <img src="img/other/bitmap_6@3x.png" width="36" alt="" class="logos__logo img-fluid">
                         <img src="img/other/bitmap_9@3x.png" width="150" alt="" class="logos__logo img-fluid">
-                        <img src="img/other/bitmap_7@3x.png" width="80" alt="" class="logos__logo img-fluid">
                         <img src="img/other/bitmap_5@3x.png" width="165"  alt="" class="logos__logo img-fluid">
+                        <img src="img/other/bitmap_7@3x.png" width="80" alt="" class="logos__logo img-fluid">
+                        <img src="img/other/bitmap_12@3x.png" width="80" alt="" class="logos__logo img-fluid">
                         <img src="img/other/bitmap_6@3x.png" width="36" alt="" class="logos__logo img-fluid">
                     </div>
                 </div>
@@ -84,7 +89,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col col-md-10 col-xl-8">
-                <div class="quote-wrapper text-center">
+                <div class="quote__wrapper text-center">
+                    <span class="quote__icon"></span>
                     <p class="quote__text">The most comprehensive anti snoring excercise program available today.</p>
                     <p class="quote__author">truth about snoring</p>
                 </div>
@@ -117,11 +123,11 @@
     </div>
 </section>
 
-<section class="quote">
+<section class="quote mb-0">
     <div class="container">
         <div class="row justify-content-center">
                 <div class="col col-md-10 col-xl-8">
-                <div class="quote-wrapper text-center">
+                <div class="quote__wrapper text-center">
                     <p class="quote__text">The optimum sleep protocol is head and shoulders above anything out there at the moemnt.</p>
                     <p class="quote__author">us health watch</p>
                 </div>
@@ -131,34 +137,36 @@
 </section>
 
 <!-- img + text, 2 columns -->
-<div class="container">
-    <div class="row justify-content-between">
-        <div class="col-12 col-md-6 col-xl-6 order-2 order-md-1">
-            <h3 class="text-center text-md-left">What are anti-snoring exercises?</h3>
-            <p>Snoring is caused by vibration of soft tissue and muscles that constitute the upper airways. In non-snorers the tissues and muscles are firm and hence do not vibrate when breathing. In snorers however, the soft tissues and muscles are floppy, which causes them to vibrate when breathing resulting in the snoring sound.</p>
-            <p>By exercising those slackened throat, tongue, jaw and mouth muscles, just as doing pushups or situps in the gym, these muscles strengthen and realign, returning to their former youthful structure and condition. </p>
-            <p><span class="marked">These unique exercises are designed to be very simple and quick to implement making them perfect for busy people who want an easy, effective, non invasive solution that has been proven to work in reducing snoring volume, frequency and intensity.</span> The exercises can be done anywhere - on the couch, in the car, in the shower… anywhere!</p>
+<section>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-6 col-xl-6 order-2 order-md-1">
+                <h3 class="text-center text-md-left">What are anti-snoring exercises?</h3>
+                <p>Snoring is caused by vibration of soft tissue and muscles that constitute the upper airways. In non-snorers the tissues and muscles are firm and hence do not vibrate when breathing. In snorers however, the soft tissues and muscles are floppy, which causes them to vibrate when breathing resulting in the snoring sound.</p>
+                <p>By exercising those slackened throat, tongue, jaw and mouth muscles, just as doing pushups or situps in the gym, these muscles strengthen and realign, returning to their former youthful structure and condition. </p>
+                <p><span class="marked">These unique exercises are designed to be very simple and quick to implement making them perfect for busy people who want an easy, effective, non invasive solution that has been proven to work in reducing snoring volume, frequency and intensity.</span> The exercises can be done anywhere - on the couch, in the car, in the shower… anywhere!</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-5 order-1 order-md-2">
+                <img src="img/mocks/group-7@3x.png" alt="" class="img-fluid">
+            </div>
         </div>
-        <div class="col-12 col-md-6 col-xl-5 order-1 order-md-2">
-            <img src="img/mocks/group-7@3x.png" alt="" class="img-fluid">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12 col-md-6 col-xl-5">
-            <img src="img/mocks/group-26@3x.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-12 col-md-6 col-xl-6">
-            <h3 class="text-center text-md-left">Multipe clinical studies confirm the effectiveness of anti-snoring exercies.</h3>
-            <p>For some years specialists in the U.S. have been studying the effectiveness of exercises in tightening and toning the throat muscles, and research shows that daily targeted exercises can reduce snoring volume by 60 percent and frequency by 39 per cent. That’s a far, far better result than any over-the-counter treatment available today.</p>
-            <div class="full-links" style="overflow: hidden">
-                <p class="full-links__title">Read the full studies here:</p>
-                <a href="#" class="full-links__link">- https://www.ecronicon.com/ecde/pdf/ECDE-07-0000250.pdf</a>
-                <a href="#" class="full-links__link">- http://www.scielo.br/pdf/rcefac/v19n6/1982-0216-rcefac-19-06-00868.pdf</a>
+    
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-5">
+                <img src="img/mocks/group-26@3x.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 col-xl-6">
+                <h3 class="text-center text-md-left">Multipe clinical studies confirm the effectiveness of anti-snoring exercies.</h3>
+                <p>For some years specialists in the U.S. have been studying the effectiveness of exercises in tightening and toning the throat muscles, and research shows that daily targeted exercises can reduce snoring volume by 60 percent and frequency by 39 per cent. That’s a far, far better result than any over-the-counter treatment available today.</p>
+                <div class="full-links" style="overflow: hidden">
+                    <p class="full-links__title">Read the full studies here:</p>
+                    <a href="#" class="full-links__link">- https://www.ecronicon.com/ecde/pdf/ECDE-07-0000250.pdf</a>
+                    <a href="#" class="full-links__link">- http://www.scielo.br/pdf/rcefac/v19n6/1982-0216-rcefac-19-06-00868.pdf</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <section class="how-in-works">
     <div class="container">
@@ -169,20 +177,20 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-6">
-                <h6 class="how-in-works__title">Before 
+                <h6 class="how-it-works__title">Before 
                     <span class="how-it-works__marked">the Optimum Sleep Protocol:</span>
                 </h4>
-                <div class="how-it-works__img-wrapper">
+                <div class="how-it-works__img-wrapper how-it-works__img-wrapper_red">
                     <img src="img/illustrations/group@3x.png" alt="" class="img-fluid">
                 </div>
                 <p class="how-in-works__desc">Before the Optimum Sleep Protocol, lorem ipsem that constitute the upper airways. In non-snorers the tissues and muscles are firm and hence do not vibrate when breathing. In snorers however, the soft tissues and muscles are floppy, which causes them.</p>
             </div>
 
             <div class="col-12 col-md-6">
-                <h6 class="how-in-works__title">After
+                <h6 class="how-it-works__title">After
                     <span class="how-it-works__marked">the Optimum Sleep Protocol:</span>
                 </h4>
-                <div class="how-it-works__img-wrapper">
+                <div class="how-it-works__img-wrapper how-it-works__img-wrapper_green">
                     <img src="img/illustrations/group-2@3x.png" alt="" class="img-fluid">
                 </div>
                 <p class="how-in-works__desc">After the Optimum Sleep Protocol, lorem snoring is caused by vibration of soft tissue and muscles that constitute the upper airways. In non-snorers the tissues and muscles are firm and hence do not vibrate when breathing.</p>
@@ -195,10 +203,10 @@
     <div class="container">
         <div class="row justify-content-center">
                 <div class="col col-md-10 col-xl-8">
-                <div class="quote-wrapper text-center">
+                <div class="quote__wrapper text-center">
                     <p class="quote__text">This study demonstrates a promising, noninvasive treatment for large populations suffering from snoring.</p>
-                    <p class="quote__author">us health watch</p>
-                    <img src="" alt="" class="quote__logo">
+                    <p class="quote__author quote__author_little">Barbara Phillips, Medical Director of the Sleep Laboratory at the University of Kentucky College of Medicine</p>
+                    <img src="img/other/bitmap_3@3x.png" width="78" alt="" class="quote__logo">
                 </div>
             </div>
         </div>
@@ -212,33 +220,41 @@
                 <h3 class="recordings__title text-center">Check Out Actual Decible Recordings From A Few of Our Customers...</h3>
             </div>
         </div>
-        <div class="row no-gutters">
+        <div class="row no-gutters recordings__block">
             <div class="col-12">
                 <h4 class="recordings__block-title text-center text-md-left">Sharon, WA / Age 53 / Female</h4>
             </div>
             <div class="col-12 col-md-6">
                 <div class="recordings__image-area">
+                    <p class="recordings__date">TUE, 17 JUL (Week #1)</p>
+                    <img src="img/illustrations/group-9.svg" alt="" class="recordings__logo">
                     <img src="img/illustrations/group-4@3x.png" alt="" class="recordings__img img-fluid">
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="recordings__image-area">
+                    <p class="recordings__date">SUN, 02 SEP (Week #8)</p>
+                    <img src="img/illustrations/group-9.svg" alt="" class="recordings__logo">
                     <img src="img/illustrations/group-5@3x.png" alt="" class="recordings__img img-fluid">
                 </div>
             </div>
         </div>
 
-        <div class="row no-gutters">
+        <div class="row no-gutters recordings__block">
             <div class="col-12">
                 <h4 class="recordings__block-title text-center text-md-left">Sharon, WA / Age 53 / Female</h4>
             </div>
             <div class="col-12 col-md-6">
                 <div class="recordings__image-area">
+                    <p class="recordings__date">TUE, 17 JUL (Week #1)</p>
+                    <img src="img/illustrations/group-9.svg" alt="" class="recordings__logo">
                     <img src="img/illustrations/group-90@3x.png" alt="" class="recordings__img img-fluid">
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="recordings__image-area">
+                    <p class="recordings__date">SUN, 02 SEP (Week #8)</p>
+                    <img src="img/illustrations/group-9.svg" alt="" class="recordings__logo">
                     <img src="img/illustrations/group-87@3x.png" alt="" class="recordings__img img-fluid">
                 </div>
             </div>
@@ -250,11 +266,15 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="recordings__image-area">
+                    <p class="recordings__date">TUE, 17 JUL (Week #1)</p>
+                    <img src="img/illustrations/group-9.svg" alt="" class="recordings__logo">
                     <img src="img/illustrations/group-4@3x.png" alt="" class="recordings__img img-fluid">
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="recordings__image-area">
+                    <p class="recordings__date">SUN, 02 SEP (Week #8)</p>
+                    <img src="img/illustrations/group-9.svg" alt="" class="recordings__logo">
                     <img src="img/illustrations/group-5@3x.png" alt="" class="recordings__img img-fluid">
                 </div>
             </div>
@@ -263,30 +283,32 @@
 </section>
 
 <!-- img + text, 2 columns -->
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h3 class="text-center">Its time to put an end to your snoring </h3>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">Its time to put an end to your snoring </h3>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <p>With new studies on snoring constantly being released, it is now very clear that snoring is not just a superficial nuisance but an epidemic with grave health consequences.</p>
-            <p>As people age, snoring can become a more serious problem. Left untreated it can develop into sleep apnoea, which causes blood oxygen levels to plummet and is associated with loss of concentration, poor memory, diabetes, hypertension, impotence, and, even heart attacks in the middle of the night.</p>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="shifted-img-wrapper">
-                <img src="img/photos/group-10@3x.jpg" alt="" class="img-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p>With new studies on snoring constantly being released, it is now very clear that snoring is not just a superficial nuisance but an epidemic with grave health consequences.</p>
+                <p>As people age, snoring can become a more serious problem. Left untreated it can develop into sleep apnoea, which causes blood oxygen levels to plummet and is associated with loss of concentration, poor memory, diabetes, hypertension, impotence, and, even heart attacks in the middle of the night.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="shifted-img-wrapper">
+                    <img src="img/photos/group-10@3x.jpg" alt="" class="shifted-img-wrapper__img img-fluid">
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <section class="quote">
     <div class="container">
         <div class="row justify-content-center">
                 <div class="col col-md-10 col-xl-8">
-                <div class="quote-wrapper text-center">
+                <div class="quote__wrapper text-center">
                     <p class="quote__text">This study demonstrates a promising, noninvasive treatment for large populations suffering from snoring.</p>
                     <p class="quote__author">truth about snoring</p>
                 </div>
@@ -300,7 +322,7 @@
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-10 text-center">
                 <h3 class="what-included__title">What’s included in the Optimum Sleep Protocol?</h3>
-                <p class="what-included__desc">The OSP is a comprenehenisve anti-snoring excercie system backed by science that is guranteed to reduce your snoring by in 12 weeks or less. <b>Heres what you get:</b></p>
+                <p class="what-included__desc">The OSP is a comprenehenisve anti-snoring excercie system backed by science that is guranteed to reduce your snoring by in 12 weeks or less. Heres what you get:</p>
             </div>
         </div>
 
@@ -357,30 +379,34 @@
 </section>
 
 <section class="blue">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center col-md-10">
-                <p class="blue__trademark-name">OptimumSleep</p>
-                <h3 class="blue__title">Stop Snoring For Good.</h3>
-                <p class="blue__desc">Reduce your snoring by 60% in 12 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
-                <a href="#" class="blue__btn">Buy Now For Just 97</a>
-                <p class="blue__sale-time text-center">Limited time discount! <br> Regular price: $147. <b>Save $50.</b></p>
+    <div class="blue__bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center col-md-10">
+                    <img src="img/other/optimum-sleep_2@3x.png" alt="" class="blue__trademark-name">
+                    <h3 class="blue__title">Stop Snoring For Good.</h3>
+                    <p class="blue__desc">Reduce your snoring by 60% in 12 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
+                    <a href="#" class="blue__btn">Buy Now For Just <span class="blue__dollar">$</span> 97</a>
+                    <p class="blue__sale-time text-center">Limited time discount! <br> Regular price: <span class="blue__crossed">$147</span>. <b>Save $50.</b></p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <section class="guaranteed">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 col-xl-4 text-center">
-                <img src="img/other/bitmap_4@3x.png" width="153" height="121" alt="" class="guaranteed__logo">
-            </div>
-            <div class="col-12 col-md-6 col-xl-8">
-                <div class="guaranteed__text-block text-center text-md-left">
-                    <h3 class="guaranteed__title">Success guaranteed or your money back!</h3>
-                    <p class="guaranteed__desc text-left">If you are not satisifed with our program for whatever reason you get 100% of your money back - no questions asked. If you do not feel your snoring was significantly reduced we’ll refund you. If you bought our program but never got around to using it, we’ll refund you. Even if you are completely satisifed and ask us for a refund, we’ll still refund you!  simply email us within 60 days of your purchase requesting a refund.</p>
-                    <img src="" alt="" class="guaranteed__signature" />
+    <div class="guaranteed__bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4 text-center">
+                    <img src="img/other/bitmap_4@3x.png" width="153" height="121" alt="" class="guaranteed__logo">
+                </div>
+                <div class="col-12 col-md-6 col-xl-8">
+                    <div class="guaranteed__text-block text-center text-md-left">
+                        <h3 class="guaranteed__title">Success guaranteed or your money back!</h3>
+                        <p class="guaranteed__desc text-left">If you are not satisifed with our program for whatever reason you get 100% of your money back - no questions asked. If you do not feel your snoring was significantly reduced we’ll refund you. If you bought our program but never got around to using it, we’ll refund you. Even if you are completely satisifed and ask us for a refund, we’ll still refund you!  simply email us within 60 days of your purchase requesting a refund.</p>
+                        <img src="img/other/group-137@3x.png" alt="" class="guaranteed__signature" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -402,7 +428,7 @@
             </div>
             <div class="col-12 col-md-8 text-center text-md-left">
                 <p class="news-list__desc"><b>“The patients in the tongue/facial exercise group had reduced their obstructive sleep apnea severity by 39%.</b> Those patients also reported that they were snoring less, sleeping better, and were less sleepy during the daytime than they had been before learning the exercises.”</p>
-                <img src="" alt="" class="news-list__logo img-fluid">
+                <img src="img/other/bitmap_5@3x.png" alt="" class="news-list__logo news-list__logo_1">
             </div>
         </div>
 
@@ -412,7 +438,7 @@
             </div>
             <div class="col-12 col-md-8 text-center text-md-left">
                 <p class="news-list__desc">“Research suggests [exercises] may reduce the severity of sleep apnea by building up muscles around the airway, making them less likely to collapse at night. <b>THE BOTTOM LINE: for people with sleep apnea, throat exercises may be a cheap and useful therapy.”</b></p>
-                <img src="" alt="" class="news-list__logo">
+                <img src="img/other/bitmap_5@3x.png" alt="" class="news-list__logo news-list__logo_2">
             </div>
         </div>
 
@@ -422,7 +448,7 @@
             </div>
             <div class="col-12 col-md-8 text-center text-md-left">
                 <p class="news-list__desc">“Overall, researchers say <b>this new treatment could be a great therapeutic option for the millions of people experiencing sleep disruptions due to snoring and OSA…”</b></p>
-                <img src="" alt="" class="news-list__logo">
+                <img src="img/other/bitmap_6@3x.png"  alt="" class="news-list__logo news-list__logo_3">
             </div>
         </div>
 
@@ -432,57 +458,57 @@
             </div>
             <div class="col-12 col-md-8 text-center text-md-left">
                 <p class="news-list__desc">“…the exercisers (and their bed partners!) benefitted from a reduction in snoring: <b>the frequency of their snores dropped by 36% and the intensity of the sound by 59%”</b></p>
-                <img src="" alt="" class="news-list__logo">
+                <img src="img/other/bitmap_7@3x.png" alt="" class="news-list__logo news-list__logo_4">
             </div>
         </div>
 
-        <div class="row news-list__item">
+        <div class="row news-list__item d-none d-md-flex">
             <div class="col-12 col-md-4 order-md-2">
                 <img src="img/other/f-2@3x.png" alt="" class="news-list__img img-fluid" />
             </div>
             <div class="col-12 col-md-8 text-center text-md-left">
                 <p class="news-list__desc">“if you’ve tried everything to attempt to stop snoring, don’t feel in despair… <b>there is still hope.”</b></p>
-                <img src="" alt="" class="news-list__logo">
+                <img src="img/other/bitmap_8@3x.png" class="news-list__logo news-list__logo_5">
             </div>
         </div>
 
-        <div class="row news-list__item">
+        <div class="row news-list__item d-none d-md-flex">
             <div class="col-12 col-md-4 order-md-2">
                 <img src="img/other/group-6-copy@3x.png" alt="" class="news-list__img img-fluid" />
             </div>
             <div class="col-12 col-md-8 text-center text-md-left">
                 <p class="news-list__desc">“You can remedy these types of snoring by performing regular exercises to boost muscle control in the throat and tongue.”</p>
-                <img src="" alt="" class="news-list__logo">
+                <img src="img/other/bitmap_9@3x.png" alt="" class="news-list__logo news-list__logo_6">
             </div>
         </div>
 
-        <div class="row news-list__item">
+        <div class="row news-list__item d-none d-md-flex">
             <div class="col-12 col-md-4 order-md-2">
                 <img src="img/other/f-3@3x.png" alt="" class="news-list__img img-fluid" />
             </div>
             <div class="col-12 col-md-8 text-center text-md-left">
                 <p class="news-list__desc">“…oropharyngeal exercises effectively reduce snoring frequency… and “total snoring power”… Sleep specialists are encouraged.”</p>
-                <img src="" alt="" class="news-list__logo">
+                <img src="img/other/bitmap_10@3x.png" alt="" class="news-list__logo news-list__logo_7">
             </div>
         </div>
 
-        <div class="row news-list__item">
+        <div class="row news-list__item d-none d-md-flex">
             <div class="col-12 col-md-4 order-md-2">
                 <img src="img/other/group-6-copy-2@3x.png" alt="" class="news-list__img img-fluid" />
             </div>
             <div class="col-12 col-md-8 text-center text-md-left">
                 <p class="news-list__desc">“…the workout will help most to stop or to at least reduce decibel levels.”</p>
-                <img src="" alt="" class="news-list__logo">
+                <img src="img/other/bitmap_11@3x.png" alt="" class="news-list__logo news-list__logo_8">
             </div>
         </div>
 
-        <div class="row news-list__item">
+        <div class="row news-list__item d-none d-md-flex">
             <div class="col-12 col-md-4 order-md-2">
                 <img src="img/other/group-6-copy-7@3x.png" alt="" class="news-list__img img-fluid" />
             </div>
             <div class="col-12 col-md-8 text-center text-md-left">
                 <p class="news-list__desc">“These exercises can help keep snoring at bay and eliminate the dependency on over-the-counter medications or expensive OSA gear.”</p>
-                <img src="" alt="" class="news-list__logo">
+                <img src="img/other/bitmap_12@3x.png" alt="" class="news-list__logo news-list__logo_9">
             </div>
         </div>
     </div>
@@ -498,14 +524,14 @@
 
         <div class="row compare__block">
             <div class="col-12 col-md-6">
-                <div class="compare__exercise">
-                    <p class="compare__exercise__title">Nasal strips or an external nasal dilator </p>
-                    <p class="compare__exercise__desc">Adhesive strips applied to the bridge of the nose. A nasal dilator is a stiffened adhesive strip applied externally across the nostrils</p>
+                <div class="compare__exercise compare__exercise_arrow-expanded">
+                    <p class="compare__exercise-title">Nasal strips or an external nasal dilator </p>
+                    <p class="compare__exercise-desc">Adhesive strips applied to the bridge of the nose. A nasal dilator is a stiffened adhesive strip applied externally across the nostrils</p>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="compare__solution text-center">
-                    <p class="compare__solution__text">“Nasal strips and external nasal dilators aren't effective for people with OSA.”</p>
+                    <p class="compare__solution-text">“Nasal strips and external nasal dilators aren't effective for people with OSA.”</p>
                     <img src="img/other/bitmap_13@3x.png" width="90" height="auto" alt="" class="compare__solution__logo" />
                 </div>
             </div>
@@ -514,13 +540,28 @@
         <div class="row compare__block">
             <div class="col-12 col-md-6">
                 <div class="compare__exercise">
-                    <p class="compare__exercise__title">Oral appliances</p>
-                    <p class="compare__exercise__desc">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
+                    <p class="compare__exercise-title">Oral appliances</p>
+                    <p class="compare__exercise-desc">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="compare__solution text-center">
-                    <p class="compare__solution__text">“Excessive salivation, dry mouth, jaw pain and facial discomfort are possible side effects from wearing these devices.”</p>
+                    <p class="compare__solution-text">“Excessive salivation, dry mouth, jaw pain and facial discomfort are possible side effects from wearing these devices.”</p>
+                    <img src="img/other/bitmap_13@3x.png" width="90" height="auto" alt="" class="compare__solution__logo" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row compare__block">
+            <div class="col-12 col-md-6">
+                <div class="compare__exercise compare__exercise_arrow-expanded">
+                    <p class="compare__exercise-title">Upper airway surgery. </p>
+                    <p class="compare__exercise-desc">There are a number of procedures that seek to open the upper airway and prevent significant narrowing during sleep through a variety of techniques.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="compare__solution text-center">
+                    <p class="compare__solution-text">“The effectiveness of these surgeries varies and the response can be challenging to predict.”</p>
                     <img src="img/other/bitmap_13@3x.png" width="90" height="auto" alt="" class="compare__solution__logo" />
                 </div>
             </div>
@@ -529,28 +570,13 @@
         <div class="row compare__block">
             <div class="col-12 col-md-6">
                 <div class="compare__exercise">
-                    <p class="compare__exercise__title">Upper airway surgery. </p>
-                    <p class="compare__exercise__desc">There are a number of procedures that seek to open the upper airway and prevent significant narrowing during sleep through a variety of techniques.</p>
+                    <p class="compare__exercise-title">Nasal Sprays / Homopathic Remedies</p>
+                    <p class="compare__exercise-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet vestibulum erat et lacinia.</p>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="compare__solution text-center">
-                    <p class="compare__solution__text">“The effectiveness of these surgeries varies and the response can be challenging to predict.”</p>
-                    <img src="img/other/bitmap_13@3x.png" width="90" height="auto" alt="" class="compare__solution__logo" />
-                </div>
-            </div>
-        </div>
-
-        <div class="row compare__block">
-            <div class="col-12 col-md-6">
-                <div class="compare__exercise">
-                    <p class="compare__exercise__title">Nasal Sprays / Homopathic Remedies</p>
-                    <p class="compare__exercise__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet vestibulum erat et lacinia.</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="compare__solution text-center">
-                    <p class="compare__solution__text">“most of the products haven't been proved effective in clinical trials.”</p>
+                    <p class="compare__solution-text">“most of the products haven't been proved effective in clinical trials.”</p>
                     <img src="img/other/bitmap_13@3x.png" width="90" height="auto" alt="" class="compare__solution__logo" />
                 </div>
             </div>
@@ -567,10 +593,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="table-responsive">
-                <table class="table table-bordered table-sm table-striped">
+            <div class="table-responsive-xl">
+                <table class="table table-sm table-striped index-table">
                     <thead>
-                        <tr>
+                        <tr class="index-table__head">
                             <th scope="col"></th>
                             <th scope="col">Anti-snoring exercises</th>
                             <th scope="col">Anti-Snore Pillows</th>
@@ -584,83 +610,83 @@
                     <tbody>
                         <tr>
                             <th scope="row">Non-intrusive</th>
-                            <td>yes</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
                         </tr>
                         <tr>
                             <th scope="row">No side effects</th>
-                            <td>yes</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
                         </tr>
                         <tr>
                             <th scope="row">Wear & tear free</th>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
                         </tr>
                         <tr>
                             <th scope="row">Solves root cause</th>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
                         </tr>
                         <tr>
                             <th scope="row">Permanent Soultion</th>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
                         </tr>
                         <tr>
                             <th scope="row">Clinically proven</th>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
                         </tr>
                         <tr>
                             <th scope="row">Visual aesthetics</th>
-                            <td>yes</td>
-                            <td>yes</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
                         </tr>
                         <tr>
                             <th scope="row">No discomfort</th>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
-                            <td>no</td>
+                            <td><img src="img/other/shape_2.svg" class="index-table__img-tick" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
+                            <td><img src="img/other/shape.svg" class="index-table__img-cross" alt=""></td>
                         </tr>
                     </tbody>
                 </table>
@@ -673,9 +699,9 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="quote-wrapper text-center">
+                <div class="quote__wrapper text-center">
                     <p class="quote__text">The plethoray of gadgets and sprays on the market rarely work.</p>
-                    <p class="quote__author">Dr  Mike Dilkes, Consultant, Ear, Nose and Throat Surgeon at London’s hospital of St John and St Elizabth</p>
+                    <p class="quote__author quote__author_little">Dr  Mike Dilkes, Consultant, Ear, Nose and Throat Surgeon at London’s hospital of St John and St Elizabth</p>
                     <img src="img/other/bitmap_3@3x.png" width="98" height="auto" alt="" class="quote__logo">
                 </div>
             </div>
@@ -687,7 +713,7 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-10 text-center">
-                <h3 class="recap-included__title">Here’s A Quick Recap of What’s Included in the Optimum Sleep Protocol</h3>
+                <h3 class="recap-included__title-main">Here’s A Quick Recap of What’s Included in the Optimum Sleep Protocol</h3>
             </div>
         </div>
 
@@ -733,11 +759,11 @@
                 <h3 class="reviews__title">Customer Reviews</h3>
                 <p class="reviews__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="reviews__general-rating">
-                    <div class="reviews__general-stars">
-                        <img src="img/other/group-156@3x.png" width="159" alt="" class="reviews__general-stars-img">
-                        <p class="reviews__general-out-of">4.7 out of 5 stars</p>
+                    <div class="reviews__general-stars d-flex justify-content-center align-items-center">
+                        <img src="img/other/group-156@3x.png" alt="" class="reviews__general-stars-img">
+                        <p class="reviews__general-total">2,379</p>
                     </div>
-                    <p class="reviews__general-total">2,379</p>
+                    <p class="reviews__general-out-of">4.7 out of 5 stars</p>
                 </div>
             </div>
         </div>
@@ -796,7 +822,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-8 col-md-6 col-xl-4">
+            <div class="col-10 col-md-6 col-xl-4">
                 <a href="#" class="reviews__btn">Load more comments <span>(147)</span></a>
             </div>
         </div>
@@ -804,14 +830,16 @@
 </section>
 
 <section class="blue">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center col-md-10">
-                <p class="blue__trademark-name">OptimumSleep</p>
-                <h3 class="blue__title">Stop Snoring For Good.</h3>
-                <p class="blue__desc">Reduce your snoring by 60% in 12 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
-                <a href="#" class="blue__btn">Buy Now For Just 97</a>
-                <p class="blue__sale-time text-center">Limited time discount! <br> Regular price: $147. <b>Save $50.</b></p>
+    <div class="blue__bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center col-md-10">
+                    <img src="img/other/optimum-sleep_2@3x.png" alt="" class="blue__trademark-name">
+                    <h3 class="blue__title">Stop Snoring For Good.</h3>
+                    <p class="blue__desc">Reduce your snoring by 60% in 12 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
+                    <a href="#" class="blue__btn">Buy Now For Just <span class="blue__dollar">$</span> 97</a>
+                    <p class="blue__sale-time text-center">Limited time discount! <br> Regular price: <span class="blue__crossed">$147</span>. <b>Save $50.</b></p>
+                </div>
             </div>
         </div>
     </div>
@@ -831,21 +859,25 @@
                 <div class="faq__group">
                     <div class="row">
                         <div class="col-12 col-md-4 text-center text-md-left">
-                            <p class="faq__grup-title">Signing Up</p>
+                            <p class="faq__group-title">Signing Up</p>
                         </div>
                         <div class="col-12 col-md-8">
                             <ul class="faq__group-list">
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
                             </ul>
                         </div>
@@ -854,22 +886,26 @@
 
                 <div class="faq__group">
                     <div class="row">
-                        <div class="col-12 col-12 col-md-4 text-center text-md-left">
-                            <p class="faq__grup-title">How does it work?</p>
+                        <div class="col-12 col-md-4 text-center text-md-left">
+                            <p class="faq__group-title">How Does it Work?</p>
                         </div>
                         <div class="col-12 col-md-8">
                             <ul class="faq__group-list">
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
                             </ul>
                         </div>
@@ -878,22 +914,26 @@
 
                 <div class="faq__group">
                     <div class="row">
-                        <div class="col-12 col-12 col-md-4 text-center text-md-left">
-                            <p class="faq__grup-title">Lorem ipsum?</p>
+                        <div class="col-12 col-md-4 text-center text-md-left">
+                            <p class="faq__group-title">Lorem Ipsum</p>
                         </div>
                         <div class="col-12 col-md-8">
                             <ul class="faq__group-list">
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
-                                <li class="faq__group-list-item"><b>Nasal strips or an external nasal dilator</b>
-                                    <br>Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.
+                                <li class="faq__group-list-item">
+                                    <p class="faq__group-item-title">Nasal strips or an external nasal dilator</p>
+                                    <p class="faq__group-item-text">Oral appliances are form-fitting dental mouthpieces that help advance the position of your jaw, tongue and soft palate to keep your air passage open.</p>
                                 </li>
                             </ul>
                         </div>
@@ -904,15 +944,17 @@
     </div>
 </section>
 
-<section class="blue">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center col-md-10">
-                <p class="blue__trademark-name">OptimumSleep</p>
-                <h3 class="blue__title">Stop Snoring For Good.</h3>
-                <p class="blue__desc">Reduce your snoring by 60% in 12 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
-                <a href="#" class="blue__btn">Buy Now For Just 97</a>
-                <p class="blue__sale-time text-center">Limited time discount! <br> Regular price: $147. <b>Save $50.</b></p>
+<section class="blue mb-0">
+    <div class="blue__bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center col-md-10">
+                    <img src="img/other/optimum-sleep_2@3x.png" alt="" class="blue__trademark-name">
+                    <h3 class="blue__title">Stop Snoring For Good.</h3>
+                    <p class="blue__desc">Reduce your snoring by 60% in 12 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
+                    <a href="#" class="blue__btn">Buy Now For Just <span class="blue__dollar">$</span> 97</a>
+                    <p class="blue__sale-time text-center">Limited time discount! <br> Regular price: <span class="blue__crossed">$147</span>. <b>Save $50.</b></p>
+                </div>
             </div>
         </div>
     </div>
@@ -921,7 +963,7 @@
 <footer class="footer">
     <div class="container text-center">
         <div class="col-12">
-            <p class="footer__logo">OptimumSleep</p>
+            <img src="img/other/optimum-sleep@3x.png" alt="" class="footer__logo">
             <p class="footer__copyright">©2018 All Rights Reserved. optimumsleep.co.</p>
         </div>
     </div>

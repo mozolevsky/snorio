@@ -1,0 +1,26 @@
+
+.header {
+    padding: 10px 0;
+    background: #fff;
+
+    &__burger-icon {
+        margin-right: 9px;
+        width: 15px;
+        height: 12px;
+        font-size: 0;
+        border: 0;
+        background: url('../../../img/other/menu.svg') no-repeat center;
+        background-size: cover;
+    }
+
+    &__logo {
+        width: 134px;
+    }
+
+    &__btn {
+        @include blue-btn;
+        padding: 6px 12px 6px 16px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}

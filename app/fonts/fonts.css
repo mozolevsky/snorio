@@ -54,3 +54,10 @@
     url("./ab1835cb-df6f-4d8d-b8ee-3075f5ba758d.svg#ab1835cb-df6f-4d8d-b8ee-3075f5ba758d") format("svg");
 }
 
+/* DPDorkDiary */
+@font-face{
+    font-family:"DPDorkDiary";
+    font-weight: normal; 
+    font-style: normal; 
+    src:url("./dpdorkdiary/DPDorkDiary") format("ttf");
+}

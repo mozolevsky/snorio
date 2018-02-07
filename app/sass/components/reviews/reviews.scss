@@ -1,0 +1,96 @@
+
+.reviews {
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        margin-bottom: 10px;
+    }
+
+    &__general-stars-img {
+        width: 100px;
+        margin-right: 9px;
+    }
+
+    &__general-total {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.89;
+        color: $blue;
+    }
+
+    &__general-out-of {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.35;
+        color: $blue;
+    }
+
+    &__general-rating {
+        margin-bottom: 21px;
+    }
+
+    &__item {
+        margin-bottom: 18px;
+        border-bottom: 1px solid #dee1e5;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    
+    &__author-block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__author-img {
+        margin-right: 10px;
+    }
+
+    &__author-name {
+        margin: 0;
+        font-size: 14px;
+        line-height: 2.43;
+        color: #000000;
+    }
+
+    &__item-stars {
+        margin-bottom: 8.5px;
+    }
+
+    &__item-title {
+        margin-bottom: 3px;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: left;
+        color: #000000;
+    }
+
+    &__item-date {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    &__item-desc {
+        margin-bottom: 14px;
+        font-size: 16px;
+    }
+
+    &__btn {
+        width: 100%;
+        display: inline-block;
+        padding: 11px 0;
+
+        font-size: 16px;
+        line-height: 1.35;
+        color: #65718b;
+        font-weight: 700;
+        text-align: center;
+
+        border-radius: 4px;
+        background-color: #f5f5f5;
+    }
+}
