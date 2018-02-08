@@ -148,14 +148,14 @@
 }
 
 .shifted-img-wrapper {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
     background-color: #50d5b3;
 
     &__img {
         position: relative;
-        left: -10px;
-        top: -10px;
+        left: -20px;
+        top: -20px;
     }
 }
 
@@ -438,11 +438,6 @@
         }
     }
 
-    .what-is {
-        background: url('../../img/mocks/group-6@3x.png') no-repeat calc(50% - 300px) top;
-        background-size: auto 356px;
-    }
-
     .what-included {
         &__block {
             margin-bottom: 35px;
@@ -515,4 +510,266 @@
             }
         }
     }
+}
+
+@media (min-width: $xl) {
+    .top-index {
+        &__bg-desctop {
+            position: relative;
+        }
+
+        &__desc {
+            width: 520px;
+            font-size: 30px;
+            line-height: 1.33;
+            color: $dark-blue;
+        }
+
+        &__btn {
+            margin-bottom: 43px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 273px;
+            font-size: 20px;
+        }
+
+        &__logos {
+            width: 440px;
+        }
+
+        &__logo-desctop {
+            position: absolute;
+            top: 50%;
+            right: 177px;
+            width: 240px;
+        }
+    }
+
+   .logos {
+        margin-bottom: 35px;
+
+       &__title-wrapper {
+           margin-bottom: 10px;
+       }
+
+       &__container {
+           padding-bottom: 10px;
+       }
+   }
+   
+   .two-columns {
+        &__block {
+            margin-bottom: 70px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+   }
+
+   .full-links {
+       font-size: 12px;
+
+       &__title {
+           font-size: 14px;
+       }
+   }
+
+   .recordings {
+        &__block {
+            margin-bottom: 30px;
+        }
+
+        &__block-title {
+            font-size: 18px;
+        }
+
+        &__date {
+            margin-bottom: -31px;
+            margin-left: 30px;
+            font-size: 16px;
+        }
+
+        &__logo {
+            width: 166px;
+        }
+   }
+
+   .what-included {
+       &__desc {
+           margin-bottom: 70px;
+           font-size: 22px;
+           line-height: 1.36;
+       }
+
+       &__marked {
+           font-weight: 600;
+       }
+
+       &__block-title {
+           margin-top: 70px;
+           margin-bottom: 24px;
+           font-size: 28px;
+           line-height: 1.21;
+       }
+   }
+
+   .guaranteed {
+        &__bg {
+            padding: 34px 89px 34px 34px;
+        }
+
+       &__title {
+           font-size: 28px;
+           font-weight: 600;
+       }
+
+       &__desc {
+           font-size: 20px;
+       }
+
+       &__logo {
+           width: 278px;
+           height: 220px;
+       }
+   }
+
+   .news-list {
+       &__desc {
+           width: 80%;
+           font-size: 20px;
+           line-height: 1.5;
+       }
+
+       &__item {
+           margin-bottom: 42px;
+           padding-bottom: 20px;
+           border-bottom: solid 1px #e4e4e4;
+
+           &:last-child {
+               border-bottom: none;
+           }
+       }
+
+       &__logo {
+           &_1 {
+                width: 277px;
+           }
+
+           &_2 {
+                width: 277px;
+            }
+
+            &_3 {
+                width: 75px;
+            }
+
+            &_4 {
+                width: 160px;
+            }
+
+            &_5 {
+                width: 168px;
+            }
+
+            &_6 {
+                width: 288px;
+            }
+
+            &_7 {
+                width: 216px;
+            }
+
+            &_8 {
+                width: 211px;
+            }
+
+            &_9 {
+                width: 173px;
+            }
+       }
+   }
+
+   .compare {
+       display: block;
+        margin-bottom: 70px;
+
+       &__title {
+           margin-bottom: 70px;
+       }
+       
+       &__exercise {
+           width: 430px;
+
+           &::after {
+               width: 100px;
+               right: -160px
+           }
+
+           &_arrow-expanded {
+                &::after {
+                    width: 100px;
+                    right: -160px
+                }
+           }
+       }
+
+       &__exercise-title {
+           font-size: 22px;
+       }
+
+       &__exercise-desc {
+        font-size: 18px;
+       }
+
+       &__solution {
+           width: 520px;
+           background: url('../../img/other/compare-solution-desctop.svg') no-repeat center;
+           background-size: contain;
+       }
+
+       &__solution-text {
+           width: 414px;
+           font-size: 20px;
+       }
+   }
+
+   .index-table {
+        font-size: 14px;
+
+        & thead th {
+            font-size: 14px;
+        }
+   }
+   
+   .faq {
+       &__desc {
+            margin-bottom: 30px;
+            font-size: 22px;
+            color: #65718b;
+       }
+
+       &__group-title {
+           font-size: 34px;
+       }
+
+       &__group-list {
+           list-style-type: none;
+           padding: 0;
+       }
+
+       &__group-item-title {
+           margin-bottom: 0;
+            font-size: 22px;
+            line-height: 1.73;
+            letter-spacing: -0.6px;
+            color: $dark-blue;
+       }
+
+       &__group-item-text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #65718b;
+       }
+   }
 }

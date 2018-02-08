@@ -16,7 +16,7 @@
     &__general-total {
         margin: 0;
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 1.89;
         color: $blue;
     }
@@ -36,7 +36,7 @@
         margin-bottom: 18px;
         border-bottom: 1px solid #dee1e5;
 
-        &:last-child {
+        &_last {
             border-bottom: none;
         }
     }
@@ -92,5 +92,23 @@
 
         border-radius: 4px;
         background-color: #f5f5f5;
+    }
+}
+
+@media (min-width: $xl) {
+    .reviews {
+        &__item-title {
+            margin-left: 8px;
+            display: inline-block;
+        }
+
+        &__item-desc {
+            font-size: 18px;
+        }
+
+        &__btn {
+            padding: 18px 41px;
+            font-size: 18px;
+        }
     }
 }

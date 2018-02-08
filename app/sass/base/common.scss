@@ -7,3 +7,10 @@ section {
     font-weight: 700;
     @include highlight;
 }
+
+
+@media (min-width: $xl) {
+    section {
+        margin-bottom: 70px;
+    }
+}

@@ -38,3 +38,24 @@
         }
     }
 }
+
+@media (min-width: $xl) {
+    .how-it-works {
+        margin-bottom: 70px;
+
+        &__title-main {
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            margin-bottom: 0;
+            line-height: 1.89;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &__img-wrapper {
+            margin-bottom: 19px;
+        }
+    }
+}

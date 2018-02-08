@@ -53,3 +53,15 @@
         color: #30435c;
     }
 }
+
+@media(min-width: $xl) {
+    .recap-included {
+        &__title-main {
+            margin-bottom: 70px;
+        }
+
+        &__item {
+            margin-bottom: 60px;
+        }
+    }
+}

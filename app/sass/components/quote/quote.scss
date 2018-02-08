@@ -35,6 +35,7 @@
     &__text {
         position: relative;
         display: inline-block;
+        margin-bottom: 1em;
 
         &::before {
             content: '';
@@ -82,6 +83,26 @@
 
         &__text {
             font-size: 24px;
+        }
+    }
+}
+
+@media (min-width: $xl)  {
+    .quote {
+        padding-top: 30px;
+        padding-bottom: 42px;
+        
+        &__text {
+            font-size: 32px;
+            line-height: 1.5;
+
+            &::before {
+                left: 20px;
+            }
+        }
+
+        &__author {
+            font-size: 18px;
         }
     }
 }

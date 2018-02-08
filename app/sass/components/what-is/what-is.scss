@@ -3,3 +3,17 @@
         margin-bottom: 17px;
     }
 }
+
+@media (min-width: $md) {
+    .what-is {
+        background: url('../../img/mocks/group-6@3x.png') no-repeat calc(50% - 300px) top;
+        background-size: auto 356px;
+    }
+}
+
+@media (min-width: $xl) {
+    .what-is {
+        background-position: calc(50% - 500px) top;
+        background-size: auto 617px;
+    }
+}

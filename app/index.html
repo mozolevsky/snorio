@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Snorio index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="libs/bootstrap-4/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/FlipClock/flipclock.css">
     <link rel="stylesheet" href="css/main.css">
@@ -16,6 +17,12 @@
             <div class="col-7 col-md-6 col-xl-8 d-flex align-items-center">
                 <button class="header__burger-icon d-block d-xl-none">Menu</button>
                 <img src="img/other/optimum-sleep@3x.png" alt="" class="header__logo img-fluid">
+                <nav class="header__nav d-none d-xl-flex">
+                    <a href="#" class="header__nav-link header__nav-link_active">Home</a>
+                    <a href="#" class="header__nav-link">About</a>
+                    <a href="#" class="header__nav-link">Contact</a>
+                    <a href="#" class="header__nav-link">FAQ</a>
+                </nav>
             </div>
             <div class="col-5 col-md-6 col-xl-4 d-flex justify-content-end align-items-center">
                 <p class="header__chat-text d-none d-md-inline-block">Chat with a Professional</p>
@@ -44,15 +51,17 @@
 <section class="top-index">
     <div class="top-index__bg d-md-none"></div>
     <div class="top-index__bg-desctop">
+        <img src="img/other/group-9.svg" alt="" class="top-index__logo-desctop d-none d-xl-block">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-7 col-xl-8">
                     <div class="top-index__wrapper">
                     <h1 class="top-index__title text-center text-sm-left">Finally, a natural solution 
                         to <span class="top-index__marked">stop snoring</span> that actually works.</h1>
-                    <p class="top-index__desc text-center text-sm-left">Reduce your snoring by 60% in 8 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
+                    <p class="top-index__desc text-center text-sm-left d-xl-none">Reduce your snoring by 60% in 8 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
+                    <p class="top-index__desc d-none d-xl-block">The facial exercise program that solves the root cause of snoring.</p>
                     <a href="#" class="top-index__btn">Buy Now →</a>
-                    <div class="top-index__logos d-flex justify-content-around">
+                    <div class="top-index__logos d-flex justify-content-between">
                         <img src="img/other/group.svg" alt="" class="top-index__logo">
                         <img src="img/other/group-2.svg" alt="" class="top-index__logo">
                         <img src="img/other/group.svg" class="top-index__logo">
@@ -138,10 +147,9 @@
     </div>
 </section>
 
-<!-- img + text, 2 columns -->
-<section>
+<section class="two-columns">
     <div class="container">
-        <div class="row justify-content-between">
+        <div class="row justify-content-between two-columns__block">
             <div class="col-12 col-md-6 col-xl-6 order-2 order-md-1">
                 <h3 class="text-center text-md-left">What are anti-snoring exercises?</h3>
                 <p>Snoring is caused by vibration of soft tissue and muscles that constitute the upper airways. In non-snorers the tissues and muscles are firm and hence do not vibrate when breathing. In snorers however, the soft tissues and muscles are floppy, which causes them to vibrate when breathing resulting in the snoring sound.</p>
@@ -153,7 +161,7 @@
             </div>
         </div>
     
-        <div class="row">
+        <div class="row two-columns__block">
             <div class="col-12 col-md-6 col-xl-5">
                 <img src="img/mocks/group-26@3x.png" alt="" class="img-fluid">
             </div>
@@ -170,11 +178,11 @@
     </div>
 </section>
 
-<section class="how-in-works">
+<section class="how-it-works">
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-8">
-                <h3 class="text-center">Let’s see how this reveloutionary new snoring sollution works:</h3>
+                <h3 class="text-center how-it-works__title-main">Let’s see how this reveloutionary new snoring sollution works:</h3>
             </div>
         </div>
         <div class="row">
@@ -284,16 +292,17 @@
     </div>
 </section>
 
-<!-- img + text, 2 columns -->
+
 <section>
     <div class="container">
-        <div class="row">
+        <div class="row d-xl-none">
             <div class="col-12">
                 <h3 class="text-center">Its time to put an end to your snoring </h3>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-6">
+                <h3 class="text-left d-none d-xl-block">Its time to put an end to your snoring </h3>
                 <p>With new studies on snoring constantly being released, it is now very clear that snoring is not just a superficial nuisance but an epidemic with grave health consequences.</p>
                 <p>As people age, snoring can become a more serious problem. Left untreated it can develop into sleep apnoea, which causes blood oxygen levels to plummet and is associated with loss of concentration, poor memory, diabetes, hypertension, impotence, and, even heart attacks in the middle of the night.</p>
             </div>
@@ -324,7 +333,7 @@
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-10 text-center">
                 <h3 class="what-included__title">What’s included in the Optimum Sleep Protocol?</h3>
-                <p class="what-included__desc">The OSP is a comprenehenisve anti-snoring excercie system backed by science that is guranteed to reduce your snoring by in 12 weeks or less. Heres what you get:</p>
+                <p class="what-included__desc">The OSP is a comprenehenisve anti-snoring excercie system backed by science that is guranteed to reduce your snoring by in 12 weeks or less. <span class="what-included__marked">Heres what you get:</span></p>
             </div>
         </div>
 
@@ -699,8 +708,8 @@
 
 <section class="quote">
     <div class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row justify-content-center">
+            <div class="col col-md-10 col-xl-8">
                 <div class="quote__wrapper text-center">
                     <p class="quote__text">The plethoray of gadgets and sprays on the market rarely work.</p>
                     <p class="quote__author quote__author_little">Dr  Mike Dilkes, Consultant, Ear, Nose and Throat Surgeon at London’s hospital of St John and St Elizabth</p>
@@ -811,7 +820,7 @@
             </div>
 
             <div class="col-12 col-md-10 col-xl-8">
-                <div class="reviews__item">
+                <div class="reviews__item reviews__item_last">
                     <div class="reviews__author-block">
                         <img src="img/other/group-14.svg" height="25" alt="" class="reviews__author-img">
                         <p class="reviews__author-name">John Draper</p>
@@ -839,7 +848,7 @@
                     <img src="img/other/optimum-sleep_2@3x.png" alt="" class="blue__trademark-name">
                     <h3 class="blue__title">Stop Snoring For Good.</h3>
                     <p class="blue__desc">Reduce your snoring by 60% in 12 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
-                    <a href="#" class="blue__btn">Buy Now For Just <span class="blue__dollar">$</span> 97</a>
+                    <a href="#" class="blue__btn blue__btn_arrow-right">Buy Now For Just <span class="blue__dollar">$</span> 97</a>
                     <p class="blue__sale-time text-center">Limited time discount! <br> Regular price: <span class="blue__crossed">$147</span>. <b>Save $50.</b></p>
                 </div>
             </div>
@@ -954,7 +963,7 @@
                     <img src="img/other/optimum-sleep_2@3x.png" alt="" class="blue__trademark-name">
                     <h3 class="blue__title">Stop Snoring For Good.</h3>
                     <p class="blue__desc">Reduce your snoring by 60% in 12 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
-                    <a href="#" class="blue__btn">Buy Now For Just <span class="blue__dollar">$</span> 97</a>
+                    <a href="#" class="blue__btn blue__btn_arrow-left">Buy Now For Just <span class="blue__dollar">$</span> 97</a>
                     <p class="blue__sale-time text-center">Limited time discount! <br> Regular price: <span class="blue__crossed">$147</span>. <b>Save $50.</b></p>
                 </div>
             </div>
