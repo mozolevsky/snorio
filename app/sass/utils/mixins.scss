@@ -4,9 +4,19 @@
     display: inline-block;
     border-radius: 4px;
     color: #fff;
+    border: 1px solid #fff;
     font-weight: 700;
-    border: none;
     background-color: $blue;
+    transition: all 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $blue;
+        color: $blue;
+        background: #fff;
+        text-decoration: none;
+    }
+    
 }
 
 @mixin orange-btn {
@@ -21,6 +31,14 @@
     background-image: linear-gradient(to bottom, #ffe19b, #febf62);
     box-shadow: 0 0 0 0 #ffffff, inset 0 4px 2px 0 rgba(255, 255, 255, 0.5);
     border: solid 2px #c88b31;
+    transition: all 0.4s ease;
+
+    &:hover {
+        cursor: pointer;
+        background-image: linear-gradient(to top, #ffe19b, #febf62);
+        text-decoration: none;
+        color: #000000;
+    }
 }
 
 @mixin highlight {
