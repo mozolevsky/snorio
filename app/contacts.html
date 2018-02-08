@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Snorio about</title>
+    <title>Snorio contacts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="libs/bootstrap-4/css/bootstrap.min.css">
@@ -47,18 +47,27 @@
 </section>
 
 
-<section class="about-top">
+<section class="contacts-form">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 order-md-2">
-                <div class="shifted-img-wrapper about-top__img">
-                    <img src="img/photos/group-8@3x.jpg" alt="" class="shifted-img-wrapper__img img-fluid ">
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <h3 class="text-center text-md-left about-top__title">Your quality of sleep is on our mind.</h3>
-                <p>OptimumSleep.co is a collaborative initiative started by sleep experts, doctors, exercise scientists, nutritionists and ENT’s from the US and the UK.</p>
-                <p>Our mission is to continuously better the lives of the millions of people suffering from various sleeping disorders through ongoing scientific research and study.</p>
+            <div class="col-12 col-md-7">
+                <h3 class="contacts-form__title">Contact Us</h3>
+                <p class="contacts-form__desc">For any questions we’d love to hear from you. Contact us at <a href="mailto:support@optimumsleep.co">support@optimumsleep.co.</a>
+                </p>
+                <form class="contacts-form__form">
+                    <div class="form-group">
+                        <label for="name-field" hidden>Name</label>
+                        <input type="email" class="form-control" id="name-field" aria-describedby="user name" placeholder="Name">
+                    </div>
+                    <div class="form-group contacts-form__form">
+                        <label for="email-field" hidden>Email</label>
+                        <input type="email" class="form-control" id="email-field" aria-describedby="user name" placeholder="Email">
+                    </div>
+                    <label for="message-field" hidden>Message</label>
+                    <textarea class="form-control" id="message-field" rows="7" placeholder="Message..."></textarea>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </div>
