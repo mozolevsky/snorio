@@ -1061,4 +1061,15 @@ section {
     text-align: center;
     color: #7a838e; }
 
+.about-top {
+  margin-top: 30px; }
+  .about-top__img {
+    margin-bottom: 20px; }
+
+@media (min-width: 1200px) {
+  .about-top {
+    margin-top: 40px; }
+    .about-top__title {
+      margin-top: 40px; } }
+
 /*# sourceMappingURL=main.css.map */
