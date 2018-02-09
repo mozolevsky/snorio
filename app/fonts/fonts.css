@@ -1,57 +1,23 @@
-@font-face{
-    font-family:"AvenirNext";
-    font-weight: normal; 
-    font-style: normal; 
-    src:url("./e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
-    src:url("./e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),
-    url("./2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"),
-    url("./1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),
-    url("./46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),
-    url("./52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+@font-face {
+    font-family:"Avenir";
+    font-weight: normal;
+    src:url("./edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix");
+    src:url("./edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix") format("eot"),
+    url("./0078f486-8e52-42c0-ad81-3c8d3d43f48e.woff2") format("woff2"),
+    url("./908c4810-64db-4b46-bb8e-823eb41f68c0.woff") format("woff"),
+    url("./4577388c-510f-4366-addb-8b663bcc762a.ttf") format("truetype"),
+    url("./b0268c31-e450-4159-bfea-e0d20e2b5c0c.svg#b0268c31-e450-4159-bfea-e0d20e2b5c0c") format("svg");
 }
-@font-face{
-    font-family:"AvenirNext";
-    font-weight: normal; 
-    font-style: italic; 
-    src:url("./d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix");
-    src:url("./d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix") format("eot"),
-    url("./7377dbe6-f11a-4a05-b33c-bc8ce1f60f84.woff2") format("woff2"),
-    url("./92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff") format("woff"),
-    url("./18839597-afa8-4f0b-9abb-4a30262d0da8.ttf") format("truetype"),
-    url("./1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg");
-}
-@font-face{
-    font-family:"AvenirNext";
-    font-weight: 600; 
-    font-style: normal; 
-    src:url("./12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
-    src:url("./12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"),
-    url("./aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2") format("woff2"),
-    url("./91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"),
-    url("./a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"),
-    url("./99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
-}
-@font-face{
-    font-family:"AvenirNext";
-    font-weight: bold; 
-    font-style: normal; 
-    src:url("./dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix");
-    src:url("./dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix") format("eot"),
-    url("./14c73713-e4df-4dba-933b-057feeac8dd1.woff2") format("woff2"),
-    url("./b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"),
-    url("./890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype"),
-    url("./ed104d8c-7f39-4e8b-90a9-4076be06b857.svg#ed104d8c-7f39-4e8b-90a9-4076be06b857") format("svg");
-}
-@font-face{
-    font-family:"AvenirNext";
-    font-weight: bold; 
-    font-style: italic; 
-    src:url("./ac2d4349-4327-448f-9887-083a6a227a52.eot?#iefix");
-    src:url("./ac2d4349-4327-448f-9887-083a6a227a52.eot?#iefix") format("eot"),
-    url("./eaafcb26-9296-4a57-83e4-4243abc03db7.woff2") format("woff2"),
-    url("./25e83bf5-47e3-4da7-98b1-755efffb0089.woff") format("woff"),
-    url("./4112ec87-6ded-438b-83cf-aaff98f7e987.ttf") format("truetype"),
-    url("./ab1835cb-df6f-4d8d-b8ee-3075f5ba758d.svg#ab1835cb-df6f-4d8d-b8ee-3075f5ba758d") format("svg");
+    
+@font-face {
+    font-family:"Avenir";
+    font-weight: bold;
+    src:url("./6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix");
+    src:url("./6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix") format("eot"),
+    url("./d513e15e-8f35-4129-ad05-481815e52625.woff2") format("woff2"),
+    url("./61bd362e-7162-46bd-b67e-28f366c4afbe.woff") format("woff"),
+    url("./ccd17c6b-e7ed-4b73-b0d2-76712a4ef46b.ttf") format("truetype"),
+    url("./20577853-40a7-4ada-a3fb-dd6e9392f401.svg#20577853-40a7-4ada-a3fb-dd6e9392f401") format("svg");
 }
 
 /* DPDorkDiary */
@@ -60,4 +26,15 @@
     font-weight: normal; 
     font-style: normal; 
     src:url("./dpdorkdiary/DPDorkDiary") format("ttf");
+}
+
+
+/* Tiempos */
+@font-face{
+    font-family:"TiemposText";
+    font-weight: 600; 
+    font-style: normal; 
+    src:url("./tiempos/TiemposTextWeb-Semibold.eot") format("eot"),
+    url("./tiempos/TiemposTextWeb-Semibold.woff2") format("woff2"),
+    url("./tiempos/TiemposTextWeb-Semibold.woff") format("woff");
 }

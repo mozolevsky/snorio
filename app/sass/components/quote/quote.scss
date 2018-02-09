@@ -34,14 +34,13 @@
 
     &__text {
         position: relative;
-        display: inline-block;
-        margin-bottom: 1em;
+        display: inline;
 
         &::before {
             content: '';
             position: absolute;
             top: -7px;
-            left: -15px;
+            left: -28px;
             width: 20px;
             height: 20px;
             background: url('../../../img/other/quote.svg') no-repeat center;
@@ -50,7 +49,7 @@
     }
 
     &__author {
-        font-family: "DPDorkDiary";
+        margin-top: 1em;
         text-transform: uppercase;
         font-size: 12px;
         line-height: 1.17;
@@ -97,7 +96,7 @@
             line-height: 1.5;
 
             &::before {
-                left: 20px;
+                left: -28px;
             }
         }
 

@@ -1,0 +1,92 @@
+.slideout-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 256px;
+    min-height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 0;
+    display: none;
+    background: transparentize($color: $blue, $amount: 0.8);
+  }
+  
+  .slideout-menu-left {
+    left: 0;
+  }
+  
+  .slideout-menu-right {
+    right: 0;
+  }
+  
+  .slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    background-color: #FFF; /* A background-color is required */
+    min-height: 100vh;
+  }
+  
+  .slideout-open,
+  .slideout-open body,
+  .slideout-open .slideout-panel {
+    overflow: hidden;
+  }
+  
+  .slideout-open .slideout-menu {
+    display: block;
+  }
+
+  #panel:before {
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  #panel.panel-open:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,.5);
+    z-index: 99;
+  }
+
+
+.mobile-menu {
+    &__close-btn {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border-radius: 30px;
+        border: 0;
+        padding: 8px 10px 8px 30px;
+        background: #fff url('../../../img/other/shape.svg') no-repeat 10px center;
+        background-size: 12px 12px;
+        color: rgba(0,0,0,.75);
+        font-weight: bold;
+    }
+
+    &__list {
+        margin-top: 60px;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__link {
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: #514d56;
+    }
+}

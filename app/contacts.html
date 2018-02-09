@@ -11,101 +11,131 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header-sticky">
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-7 col-md-6 col-xl-8 d-flex align-items-center">
-                <button class="header__burger-icon d-block d-xl-none">Menu</button>
+                <button class="header__burger-icon d-block d-xl-none js-slideout-toggle">Menu</button>
                 <img src="img/other/optimum-sleep@3x.png" alt="" class="header__logo img-fluid">
                 <nav class="header__nav d-none d-xl-flex">
                     <a href="#" class="header__nav-link header__nav-link_active">Home</a>
                     <a href="#" class="header__nav-link">About</a>
                     <a href="#" class="header__nav-link">Contact</a>
-                    <a href="#" class="header__nav-link">FAQ</a>
+                    <a href="#faq" data-scroll class="header__nav-link">FAQ</a>
                 </nav>
             </div>
             <div class="col-5 col-md-6 col-xl-4 d-flex justify-content-end align-items-center">
-                <p class="header__chat-text d-none d-md-inline-block">Chat with a Professional</p>
+                <a href="#" class="header__chat-text d-none d-md-inline-block">Chat with a Professional</a>
                 <a href="#" class="header__btn">Buy Now</a>
             </div>
         </div>
     </div>
+    <div class="header-sticky-overlay"></div>
 </header>
-
-<section class="counter">
-    <div class="container">
-        <div class="row justify-content-xl-center">
-            <div class="col-12 col-xl-10">
-                <p class="counter__desc">
-                    Counter will be implemented here
-                </p>
-                <!-- <div class="clock"></div> -->
-            </div>
             
-        </div>
-    </div>
-</section>
+<nav id="menu" class="mobile-menu">
+    <button class="mobile-menu__close-btn js-slideout-toggle">menu</button>
+    <ul class="mobile-menu__list">
+        <li class="mobile-menu__list-item"><a class="mobile-menu__link" href="#">Home</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__link" href="#">About</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__link" href="#">Contact</a></li>
+        <li class="mobile-menu__list-item"><a class="mobile-menu__link" href="#">FAQ</a></li>
+    </ul>
+</nav>
 
-
-<section class="contacts-form">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-7">
-                <h3 class="contacts-form__title">Contact Us</h3>
-                <p class="contacts-form__desc">For any questions we’d love to hear from you. Contact us at <a href="mailto:support@optimumsleep.co">support@optimumsleep.co.</a>
-                </p>
-                <form class="contacts-form__form">
-                    <div class="form-group">
-                        <label for="name-field" hidden>Name</label>
-                        <input type="email" class="form-control" id="name-field" aria-describedby="user name" placeholder="Name">
-                    </div>
-                    <div class="form-group contacts-form__form">
-                        <label for="email-field" hidden>Email</label>
-                        <input type="email" class="form-control" id="email-field" aria-describedby="user name" placeholder="Email">
-                    </div>
-                    <label for="message-field" hidden>Message</label>
-                    <textarea class="form-control" id="message-field" rows="7" placeholder="Message..."></textarea>
-                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="blue mb-0">
-    <div class="blue__bg">
+<main id="panel">
+    <header class="header">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center col-md-10">
-                    <img src="img/other/optimum-sleep_2@3x.png" alt="" class="blue__trademark-name">
-                    <h3 class="blue__title">Stop Snoring For Good.</h3>
-                    <p class="blue__desc">Reduce your snoring by 60% in 12 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
-                    <a href="#" class="blue__btn blue__btn_arrow-left">Buy Now For Just <span class="blue__dollar">$</span> 97</a>
-                    <p class="blue__sale-time text-center">Limited time discount! <br> Regular price: <span class="blue__crossed">$147</span>. <b>Save $50.</b></p>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-7 col-md-6 col-xl-8 d-flex align-items-center">
+                    <button class="header__burger-icon d-block d-xl-none js-slideout-toggle">Menu</button>
+                    <img src="img/other/optimum-sleep@3x.png" alt="" class="header__logo img-fluid">
+                    <nav class="header__nav d-none d-xl-flex">
+                        <a href="#" class="header__nav-link header__nav-link_active">Home</a>
+                        <a href="#" class="header__nav-link">About</a>
+                        <a href="#" class="header__nav-link">Contact</a>
+                        <a href="#faq" data-scroll class="header__nav-link">FAQ</a>
+                    </nav>
+                </div>
+                <div class="col-5 col-md-6 col-xl-4 d-flex justify-content-end align-items-center">
+                    <a href="#" class="header__chat-text d-none d-md-inline-block">Chat with a Professional</a>
+                    <a href="#" class="header__btn">Buy Now</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="container text-center">
-        <div class="col-12">
-            <img src="img/other/optimum-sleep@3x.png" alt="" class="footer__logo">
-            <p class="footer__copyright">©2018 All Rights Reserved. optimumsleep.co.</p>
+    </header>
+    
+    <section class="counter">
+        <div class="container">
+            <div class="row justify-content-xl-center">
+                <div class="col-12 col-xl-10">
+                    <p class="counter__desc">
+                        Counter will be implemented here
+                    </p>
+                    <!-- <div class="clock"></div> -->
+                </div>
+                
+            </div>
         </div>
-    </div>
-</footer>
+    </section>
+    
+    
+    <section class="contacts-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <h3 class="contacts-form__title">Contact Us</h3>
+                    <p class="contacts-form__desc">For any questions we’d love to hear from you. Contact us at <a href="mailto:support@optimumsleep.co">support@optimumsleep.co.</a>
+                    </p>
+                    <form class="contacts-form__form">
+                        <div class="form-group">
+                            <label for="name-field" hidden>Name</label>
+                            <input type="email" class="form-control" id="name-field" aria-describedby="user name" placeholder="Name">
+                        </div>
+                        <div class="form-group contacts-form__form">
+                            <label for="email-field" hidden>Email</label>
+                            <input type="email" class="form-control" id="email-field" aria-describedby="user name" placeholder="Email">
+                        </div>
+                        <label for="message-field" hidden>Message</label>
+                        <textarea class="form-control" id="message-field" rows="7" placeholder="Message..."></textarea>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="blue mb-0">
+        <div class="blue__bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center col-md-8">
+                        <img src="img/other/optimum-sleep_2@3x.png" alt="" class="blue__trademark-name">
+                        <h3 class="blue__title">It’s About Time You Stopped Snoring.</h3>
+                        <p class="blue__desc">Reduce your snoring by 60% in 12 weeks or less with the integrated anti-snoring excercise program for your mouth, tounge, jaw and throat.</p>
+                        <a href="#" class="blue__btn blue__btn_arrow-left">Buy Now For Just <span class="blue__dollar">$</span> 97</a>
+                        <p class="blue__sale-time text-center">Limited time discount! <br> Regular price: <span class="blue__crossed">$147</span>. <b>Save $50.</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="col-12">
+                <img src="img/other/optimum-sleep@3x.png" alt="" class="footer__logo">
+                <p class="footer__copyright">©2018 All Rights Reserved. optimumsleep.co.</p>
+            </div>
+        </div>
+    </footer>
+</main>
 
 <script src="libs/jquery/dist/jquery.min.js"></script>
 <script src="libs/bootstrap-4/js/bootstrap.min.js"></script>
 <script src="libs/FlipClock/flipclock.min.js"></script>
+<script src="libs/slideout/slideout.min.js"></script>
 <script src="js/scripts.js"></script>
-<script type="text/javascript">
-	var clock = $('.clock').FlipClock(3600, {
-		countdown: true
-	});
-</script>
 </body>
 </html>
