@@ -2,6 +2,10 @@
 .how-it-works {
     margin-bottom: 10px;
 
+    &__title-main {
+        text-align: center;
+    }
+
     &__title {
         display: block;
         width: 60%;

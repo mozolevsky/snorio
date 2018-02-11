@@ -56,6 +56,11 @@
 
 @media(min-width: $xl) {
     .recap-included {
+
+        &_two {
+            padding-bottom: 0!important;
+        }
+
         &__title-main {
             margin-bottom: 70px;
         }

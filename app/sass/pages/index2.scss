@@ -1,0 +1,311 @@
+/* specific styles for  blocks in index2 layout */
+
+.protocol {
+    &__wrapper {
+        margin-bottom: 20px;
+        padding: 30px 20px 20px;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 7px;
+        font-size: 20px;
+        color: $blue;
+        font-weight: 700;
+    }
+
+    &__desc {
+        margin-bottom: 30px;
+        font-size: 16px;
+        color: $dark-blue;
+    }
+
+    &__weeks {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    &__week {
+        margin-bottom: 20px;
+        display: flex;
+        flex-flow: column;
+        align-items: space-between;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    &__week-title {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 16px;
+        color: $dark-blue;
+        font-weight: bold;
+    }
+
+    &__week-img {
+        width: 100%;
+    }
+
+}
+
+.clinical-results {
+    &__title {
+        font-size: 22px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__subtitle {
+        margin-bottom: 0;
+        line-height: 1.7;
+        color: $blue;
+        font-weight: bold;
+    }
+
+    & p {
+        margin-bottom: 0.5em;
+    }
+}
+
+.orange-button {
+    position: relative;
+    @include orange-btn;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+
+    &__dollar {
+        font-size: 14px;
+        font-weight: 800;
+        position: relative;
+        top: -4px;
+        right: -4px;
+    }
+}
+
+.common-questions {
+    &__title {
+        margin-bottom: 0.5em;
+    }
+
+    &__desc {
+        font-size: 1.1em;
+        line-height: 1.2;
+        color: #65718b;
+    }
+
+    &__list {
+        margin-bottom: 1.5em;
+        padding-left: 1.5em;
+        font-size: 16px;
+        font-weight: bold;
+
+        & span {
+            display: block;
+            font-weight: normal;
+        }
+    }
+
+    &__item {
+        margin-bottom: 1em;
+    }
+
+    &__guaranteed {
+        margin-bottom: 1.5em;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 1em 0.75em;
+        border-radius: 4px;
+
+        font-size: 15px;
+        text-align: center;
+
+        background-color: #ffffff;
+        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.06);
+        border: solid 1px rgba(101, 113, 139, 0.1);
+    }
+
+    &__guaranteed-title {
+        font-size: 1.25em;
+        font-weight: 700;
+    }
+
+    &__guaranteed-img {
+        width: 10em;
+        margin-bottom: 0.9em;
+    }
+
+    &__guaranteed-signature {
+        width: 15.4em;
+    }
+}
+
+.index-two-bottom {
+    &__title {
+        margin-bottom: 0.5em;
+    }
+
+    &__desc {
+        margin-bottom: 1em;
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 182px;
+    }
+
+    &__price {
+        font-size: 16px;
+    }
+
+    &__crossed {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 9px;
+            left: -3px;
+            background: black;
+            transform: rotate(21deg);
+        }
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+    }
+}
+
+@media (min-width: $md) {
+    .protocol {
+
+        &__wrapper {
+            margin-bottom: 30px;
+        }
+
+        &__weeks {
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__week {
+            margin-bottom: 0;
+            min-height: 150px;
+            width: 19%;   
+        }
+    
+        &__week-title {
+            font-size: 12px;
+        }
+    }
+
+    .clinical-results {
+        &__title {
+            font-size: 24px;
+        }
+    }
+
+    .common-questions {
+        &__desc {
+            font-size: 1em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .index-two-bottom {
+        &__desc {
+            margin-bottom: 1.44em;
+        }
+
+        &__logo {
+            margin-bottom: -0.5em;
+        }
+
+        &__price {
+            font-size: 0.8em;
+        }
+    }
+}
+
+@media (min-width: $xl) {
+    .protocol {
+        &__wrapper {
+            margin-bottom: 40px;
+        }
+
+        &__week {
+            min-height: 230px;
+        }
+    
+        &__week-title {
+            font-size: 16px;
+        }
+    }
+
+    .clinical-results {
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    .orange-button {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-size: 22px;
+    }
+
+    .common-questions {
+        &__desc {
+            font-size: 1.35em;
+            margin-bottom: 2.5em;
+        }
+        
+        &__wrapper {
+            margin-right: 40px;
+            margin-bottom: 60px;
+        }
+
+        &__guaranteed {
+            padding: 1.5em 2.5em;
+        }
+    }
+
+    .index-two-bottom {
+        &__desc {
+            font-size: 1.12em;
+        }
+
+        &__logo {
+            width: 300px;
+            margin-bottom: -1em;
+        }
+
+        &__price {
+            margin-bottom: 1em;
+        }
+
+        &__logos {
+            height: 69px;
+            width: 80%;
+        }
+    }
+}

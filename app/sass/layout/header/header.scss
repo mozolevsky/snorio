@@ -23,6 +23,12 @@
         font-size: 14px;
         line-height: 19px;
     }
+
+    &__btn-two {
+        @include orange-btn;
+        padding: 6px 12px 6px 16px;
+        font-size: 16px;
+    }
 }
 
 .header-sticky-overlay {
@@ -74,6 +80,10 @@
 
             background: url('../../../img/other/comment.svg') no-repeat left center;
             background-size: contain;
+        }
+
+        &__btn-two {
+            padding: 10px 23px 10px 22px;
         }
     }
 }

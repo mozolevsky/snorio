@@ -10,6 +10,13 @@
         color: $blue;
     }
 
+    &__btn-logos-group {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__btn {
         margin-bottom: 20px;
         @include blue-btn;
@@ -20,14 +27,28 @@
         line-height: 1.35;
         text-transform: uppercase;
         text-align: center;
+
+        &_two {
+            @include orange-btn;
+            margin-bottom: 20px;
+        }
     }
 
+    
     &__logo {
         width: 20%;
         height: auto;
 
         &_long {
             width: 26%;
+        }
+
+        &_two {
+            width: 25%;
+        }
+
+        &_long-two {
+            width: 33%;
         }
     }
 }
@@ -227,6 +248,11 @@
             width: 36px;
             height: 1px;
             background: #dee1e5;
+        }
+
+        &_two {
+            margin-bottom: 1.5em;
+            text-align: center;
         }
     }
 
@@ -504,21 +530,41 @@
         background: url('../../img/other/hero-bg-desktop.jpg') no-repeat center;
         background-size: 100%;
 
+        &_two {
+            background: url('../../img/mocks/group-6@3x.png') no-repeat calc(50vw + 64px) 33px;
+            background-size: auto 64%;
+        }
+
         &__bg-desctop {
-            padding-top: 52px;
-            padding-bottom: 30px;
+            padding-top: 32px;
+            padding-bottom: 20px;
             background:
             // linear-gradient(90deg, rgba(255,255,255,1) 30%,rgba(255,255,255,0) 70%),
              linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 70%);
+
+             &_two {
+                background: none;
+             }
         }
 
         &__desc {
             margin-bottom: 29px;
         }
 
+        &__btn-logos-group {
+            flex-flow: row;
+            margin-bottom: 23px;
+            justify-content: flex-start;
+        }
+
         &__btn {
             margin-bottom: 22px;
             width: 223px;
+
+            &_two {
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
         }
     }
 
@@ -594,6 +640,12 @@
     }
 
     .news-list {
+        &__wrapper {
+            &_two {
+                margin-bottom: 1.5em;
+            }
+        }
+        
         &__title {
             margin-bottom: 10px;
         }
@@ -603,8 +655,20 @@
         }
 
         &__item {
+            padding-top: 25px;
+            margin-bottom: 0;
+
             &::after {
                 content: none;
+            }
+
+            &_two {
+                border-top: solid 1px #dee1e5;
+                border-right: solid 1px #dee1e5;
+
+                &:nth-child(2n) {
+                    border-right: none;
+                }
             }
         }
     }
@@ -634,15 +698,35 @@
 
 @media (min-width: $xl) {
     .top-index {
+        &_two {
+            background-position: calc(50vw + 90px) 33px;
+            background-size: auto 95%;
+        }
+
         &__bg-desctop {
             position: relative;
+            padding-top: 52px;
+            padding-bottom: 30px;
         }
 
         &__desc {
-            width: 520px;
+            width: 534px;
             font-size: 30px;
             line-height: 1.33;
             color: $dark-blue;
+
+            &_two {
+                font-size: 26px;
+            }
+
+            &_two-min {
+                width: 90%;
+                font-size: 22px;
+            }
+        }
+
+        &__btn-logos-group {
+            margin-bottom: 43px;
         }
 
         &__btn {
@@ -651,10 +735,20 @@
             padding-bottom: 20px;
             width: 273px;
             font-size: 20px;
+
+            &_two {
+                padding-top: 15px;
+                padding-bottom: 13px;
+                margin-bottom: 0;
+            }
         }
 
         &__logos {
             width: 440px;
+
+            &_two {
+                width: 257px;
+            }
         }
 
         &__logo-desctop {
@@ -678,6 +772,10 @@
        &__item {
             display: inline-block;
             min-width: 40%;
+
+            &_two {
+                min-width: 100%;
+            }
        }
    }
    
@@ -759,6 +857,12 @@
    }
 
    .news-list {
+        &__wrapper {
+            &_two {
+                margin-bottom: 2.2em;
+            }
+        }
+
        &__desc {
            width: 100%;
            font-size: 20px;
@@ -773,6 +877,11 @@
 
            &:last-child {
                border-bottom: none;
+           }
+
+           &_two {
+               margin-bottom: 0;
+               border-bottom: 0;
            }
        }
 

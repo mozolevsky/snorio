@@ -62,9 +62,11 @@ let slideout = new Slideout({
 
 
   // timer
-let clock = $('.clock').FlipClock(3600, {
-    countdown: true
-});
+if ($('.clock')) {
+    let clock = $('.clock').FlipClock(3600, {
+        countdown: true
+    });
+}
 
 
 //reviews 

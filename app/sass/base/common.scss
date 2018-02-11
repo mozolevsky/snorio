@@ -3,14 +3,47 @@ section {
     margin-bottom: 30px;
 }
 
+.box {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.filled {
+    background-color: rgba(101, 113, 139, 0.04);
+}
+
 .marked {
     font-weight: 700;
     @include highlight;
 }
 
 
+@media (min-width: $md) {
+    .box {
+        margin-top: 0!important;
+        margin-bottom: 0!important;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+
 @media (min-width: $xl) {
     section {
         margin-bottom: 70px;
+    }
+
+    .h3_min {
+        margin-bottom: 40px;
+        font-size: 44px;
+    }
+
+    .box {
+        margin-top: 0!important;
+        margin-bottom: 0!important;
+        padding-top: 40px;
+        padding-bottom: 50px;
     }
 }
