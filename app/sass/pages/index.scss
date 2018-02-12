@@ -6,7 +6,10 @@
     }
  
      &__marked {
-         color: $blue;
+        color: $blue;
+        background: url('../../img/other/underline.svg') bottom left no-repeat;
+        background-size: 100% 0.75rem;
+        padding-bottom: 0.3rem;
      }
  
      &__btn-logos-group {
@@ -26,6 +29,15 @@
          line-height: 1.35;
          text-transform: uppercase;
          text-align: center;
+         -webkit-box-shadow: none;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+        border: 1px solid rgba(0,0,0,0.2);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+        border-bottom: 3px solid rgba(0,0,0,0.2);
+        text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
  
          &_two {
              @include orange-btn;
@@ -35,12 +47,12 @@
  
      
      &__logo {
-         width: 20%;
-         height: auto;
- 
-         &_long {
-             width: 26%;
-         }
+        width: auto;
+        height: auto;
+
+        &_long {
+            width: auto;
+        }
  
          &_two {
              width: 25%;
@@ -61,7 +73,6 @@
          width: auto;
          font-size: 14px;
          font-weight: bold;
-         letter-spacing: -0.4px;
          color: #001837;
      }
  
@@ -126,173 +137,175 @@
          background-size: 20px 18px;
      }
  }
+
+
  
- .full-links {
-     font-size: 10px;
-     text-align: left;
-     color: #000000;
- 
-     &__title {
-         margin-bottom: 5px;
-         font-size: 12px;
-         font-weight: bold;
-         color: #828282;
-     }
- 
-     &__link {
-         color: #000000;
-     }
- }
- 
- .recordings {
-     &__block {
-         margin-bottom: 20px;
-     }
- 
-     &__block-title {
-         margin-bottom: 10px;
-         font-size: 16px;
-         font-weight: 900;
-         line-height: 2.13;
-         text-align: center;
-         color: $dark-blue;
-         text-decoration: underline;
-     }
- 
-     &__image-area {
-         position: relative;
-         padding-top: 10px;
-         padding-bottom: 10px;
-         margin-bottom: 10px;
-         border-radius: 8px;
-         background-color: #ffffff;
-         box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.1);
-     }
- 
-     &__date {
-         margin: 0;
-         margin-bottom: -15px;
-         margin-left: 16px;
-         font-size: 10px;
-         font-weight: 600;
-     }
- 
-     &__logo {
-         position: absolute;
-         top: 8px;
-         right: 0;
-         width: 100px;
-     }
- }
- 
- .shifted-img-wrapper {
-     margin-top: 20px;
-     margin-left: 20px;
-     background-color: #50d5b3;
- 
-     &__img {
-         position: relative;
-         left: -20px;
-         top: -20px;
-     }
- }
- 
- .what-included {
-     &__desc {
-         margin-bottom: 20px;
-     }
- 
-     &__img {
-         margin-bottom: 10px;
-     }
- 
-     &__block-title {
-         font-size: 22px;
-         line-height: 1.36;
-         color: $blue;
-     }
- }
- 
- .guaranteed {
-     margin-bottom: 15px;
- 
-     &__bg {
-         padding: 23px 5px 34px;
-         width: 95%;
-         margin: 0 auto;
-         background: url('../../img/other/guaranteed-bg.svg') no-repeat center;
-         background-size: 100%;
-     }
- 
-     &__desc {
-         margin-bottom: 30px;
-     }
- 
-     &__signature {
-         width: 230px;
-     }
- }
- 
- .news-list {
-     &__item {
-         padding-bottom: 25px;
-         position: relative;
- 
-         &::after {
-             content: '';
-             position: absolute;
-             left: 50%;
-             bottom: 0;
-             transform: translate(-50%, 0);
-             width: 36px;
-             height: 1px;
-             background: #dee1e5;
-         }
- 
-         &_two {
-             margin-bottom: 1.5em;
-             text-align: center;
-         }
-     }
- 
-     &__logo {
-         &_1 {
-             width: 191px;
-         }
- 
-         &_2 {
-             width: 191px;
-         }
- 
-         &_3 {
-             width: 36px;
-         }
- 
-         &_4 {
-             width: 98px;
-         }
- 
-         &_5 {
-             width: 111px;
-         }
- 
-         &_6 {
-             width: 220px;
-         }
- 
-         &_7 {
-             width: 167px;
-         }
- 
-         &_8 {
-             width: 167px;
-         }
- 
-         &_9 {
-             width: 173px;
-         }
-     }
- }
+.full-links {
+    font-size: 10px;
+    text-align: left;
+    color: #000000;
+
+    &__title {
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #828282;
+    }
+
+    &__link {
+        color: #000000;
+    }
+}
+
+.chest-journal {
+    width: 85%;
+}
+
+.recordings {
+    &__block {
+        margin-bottom: 20px;
+    }
+
+    &__block-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 2.13;
+        text-align: center;
+        color: $dark-blue;
+    }
+
+    &__image-area {
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &__date {
+        margin: 0;
+        margin-bottom: -15px;
+        margin-left: 16px;
+        font-size: 10px;
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 16px;
+        right: 0;
+        width: 100px;
+    }
+}
+
+.shifted-img-wrapper {
+    text-align: right;
+        &__img {
+            box-shadow: 20px 20px 0 #50d5b3;
+        }
+}
+
+.what-included {
+    &__desc {
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        margin-bottom: 10px;
+    }
+
+    &__block-title {
+        font-size: 22px;
+        line-height: 1.36;
+        color: $blue;
+    }
+}
+
+.guaranteed {
+    margin-bottom: 15px;
+
+    &__bg {
+        padding: 23px 5px 34px;
+        width: 95%;
+        margin: 0 auto;
+        background: url('../../img/other/guaranteed-bg.svg') no-repeat center;
+        background-size: 100%;
+    }
+
+    &__desc {
+        margin-bottom: 30px;
+    }
+
+    &__signature {
+        width: 230px;
+    }
+}
+
+.news-list {
+    &__item {
+        padding-bottom: 25px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 0);
+            width: 36px;
+            height: 1px;
+            background: #dee1e5;
+        }
+
+        &_two {
+            margin-bottom: 1.5em;
+            text-align: center;
+        }
+    }
+
+    &__logo {
+        &_1 {
+            width: 191px;
+        }
+
+        &_2 {
+            width: 191px;
+        }
+
+        &_3 {
+            width: 36px;
+        }
+
+        &_4 {
+            width: 98px;
+        }
+
+        &_5 {
+            width: 111px;
+        }
+
+        &_6 {
+            width: 220px;
+        }
+
+        &_7 {
+            width: 167px;
+        }
+
+        &_8 {
+            width: 167px;
+        }
+
+        &_9 {
+            width: 173px;
+        }
+    }
+}
  
  .compare {
      &__title {
@@ -526,8 +539,8 @@
  @media (min-width: $md) {
      .top-index {
          margin-bottom: 0;
-         background: url('../../img/other/hero-bg-desktop.jpg') no-repeat center;
-         background-size: 100%;
+         background: url('../../img/other/hero-bg-desktop.jpg') no-repeat right top;
+        background-size: contain;
  
          &_two {
              background: url('../../img/mocks/group-6@3x.png') no-repeat calc(50vw + 64px) 33px;
@@ -535,8 +548,8 @@
          }
  
          &__bg-desctop {
-             padding-top: 32px;
-             padding-bottom: 20px;
+             padding-top: 40px;
+             padding-bottom: 30px;
              background:
              // linear-gradient(90deg, rgba(255,255,255,1) 30%,rgba(255,255,255,0) 70%),
               linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0) 70%);
@@ -568,8 +581,8 @@
      }
  
      .counter {
-         padding-top: 13px;
-         padding-bottom: 64px;
+         padding-top: 10px;
+         padding-bottom: 61px;
  
          &__desc {
              margin-top: 8px;
@@ -709,9 +722,9 @@
          }
  
          &__desc {
-             width: 534px;
-             font-size: 30px;
-             line-height: 1.33;
+            width: 520px;
+            font-size: 28px;
+            line-height: 1.2;
              color: $dark-blue;
  
              &_two {
@@ -729,7 +742,7 @@
          }
  
          &__btn {
-             margin-bottom: 43px;
+             margin-bottom: 30px;
              padding-top: 20px;
              padding-bottom: 20px;
              width: 273px;
@@ -759,7 +772,8 @@
      }
  
     .logos {
-         margin-bottom: 35px;
+        margin-top: 10px;
+        margin-bottom: 20px;
          text-align: center;
  
          &__logo {
@@ -798,11 +812,13 @@
  
     .recordings {
          &__block {
-             margin-bottom: 30px;
+            margin-bottom: 30px;
+            margin-top: 20px;
          }
  
          &__block-title {
              font-size: 18px;
+             font-weight: normal;
          }
  
          &__date {
@@ -828,7 +844,7 @@
         }
  
         &__block-title {
-            margin-top: 70px;
+            margin-top: 20px;
             margin-bottom: 24px;
             font-size: 28px;
             line-height: 1.21;
