@@ -98,7 +98,12 @@ gulp.task("watch", ["sass", "browser-sync"], function () {
 
 gulp.task("default", ["watch"]);
 
-gulp.task("build", ["clean", "img", "stylesMove", "scriptsMin"], function () {
+gulp.task("build", ["clean", "stylesMove", "scriptsMin", "img"], function () {
+
+	let modifyUrls = gulp.src("dist/css/main.min.css")
+	.pipe(replace("../../../img", "../../img"))
+        .pipe(replace("../../img", "../img"))
+        .pipe(gulp.dest("dist/css"));
 
 	let moveFonts = gulp.src("app/fonts/**/*")
         .pipe(gulp.dest("dist/fonts"));
