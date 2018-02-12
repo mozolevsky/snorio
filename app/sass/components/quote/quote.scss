@@ -8,7 +8,7 @@
     &::before {
         content: '';
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 50%;
         transform: translate(-50%, 0);
         width: 36px;
@@ -19,7 +19,7 @@
     &::after {
         content: '';
         position: absolute;
-        bottom: 0; 
+        bottom: 0;
         left: 50%;
         transform: translate(-50%, 0);
         width: 36px;
@@ -29,7 +29,6 @@
 
     &__wrapper {
         margin: 0 auto;
-        width: 90%;
     }
 
     &__text {
@@ -46,6 +45,13 @@
             background: url('../../../img/other/quote.svg') no-repeat center;
             background-size: contain;
         }
+    }
+
+    &__logo {
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &__author {
@@ -88,9 +94,9 @@
 
 @media (min-width: $xl)  {
     .quote {
-        padding-top: 30px;
-        padding-bottom: 42px;
-        
+        padding-top: 20px;
+        padding-bottom: 35px;
+
         &__text {
             font-size: 32px;
             line-height: 1.5;
