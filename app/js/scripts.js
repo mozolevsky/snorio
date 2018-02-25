@@ -15,11 +15,14 @@ let slideout = new Slideout({
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('menu'),
     'padding': 256,
-    'tolerance': 70
+    'tolerance': 70,
+    'touch': false
   });
 
   // Toggle button
-    document.querySelectorAll('.js-slideout-toggle').forEach(function(item) {
+  let allToggleButtons = document.querySelectorAll('.js-slideout-toggle');
+
+    [].forEach.call(allToggleButtons, function(item) {
         item.addEventListener('click', function() {
           slideout.toggle();
       });
@@ -65,6 +68,7 @@ let slideout = new Slideout({
 let clock = $('.clock').FlipClock(3600, {
     countdown: true
 });
+console.log('after timer');
 
 
 //reviews
@@ -74,18 +78,18 @@ let reviewsSpinner = document.querySelector('.loader');
 let counter = 0;
 
 if (reviewsBtn && reviewsBtnText && reviewsSpinner) {
-    reviewsBtn.addEventListener('click', (e) => {
+    reviewsBtn.addEventListener('click', function(e) {
         e.preventDefault();
 
         if (counter < 10) {
             reviewsBtnText.classList.toggle('d-none');
             reviewsBtn.setAttribute('disabled', true);
             reviewsSpinner.classList.toggle('d-none');
-            let reviewsHiddenBlock = document.querySelector(`.reviews-${counter}-js`);
+            let reviewsHiddenBlock = document.querySelector('.reviews-' + counter + '-js');
 
             ++counter;
 
-            setTimeout(() => {
+            setTimeout(function() {
                 reviewsSpinner.classList.toggle('d-none');
 
                 if (counter === 10) {
@@ -99,5 +103,14 @@ if (reviewsBtn && reviewsBtnText && reviewsSpinner) {
                 reviewsHiddenBlock.classList.remove('d-none');
             }, 2500);
         }
+    });
+}
+
+// table 
+var table = document.querySelector('.table');
+
+if (table) {
+    table.addEventListener('touchstart', function(e) {
+        e.stopImmediatePropagation();
     });
 }
