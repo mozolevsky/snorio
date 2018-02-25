@@ -8,17 +8,17 @@
     -webkit-overflow-scrolling: touch;
     z-index: 0;
     display: none;
-    background: transparentize($color: $blue, $amount: 0.8);
+    background: $blue;
   }
-  
+
   .slideout-menu-left {
     left: 0;
   }
-  
+
   .slideout-menu-right {
     right: 0;
   }
-  
+
   .slideout-panel {
     position: relative;
     z-index: 1;
@@ -26,13 +26,13 @@
     background-color: #FFF; /* A background-color is required */
     min-height: 100vh;
   }
-  
+
   .slideout-open,
   .slideout-open body,
   .slideout-open .slideout-panel {
     overflow: hidden;
   }
-  
+
   .slideout-open .slideout-menu {
     display: block;
   }
@@ -43,7 +43,7 @@
     background-color: rgba(0,0,0,0);
     transition: background-color 0.5s ease-in-out;
   }
-  
+
   #panel.panel-open:before {
     position: absolute;
     top: 0;
@@ -62,11 +62,12 @@
         left: 10px;
         border-radius: 30px;
         border: 0;
-        padding: 8px 10px 8px 30px;
+        padding: 5px 12px 5px 30px;
         background: #fff url('../../../img/other/shape.svg') no-repeat 10px center;
         background-size: 12px 12px;
-        color: rgba(0,0,0,.75);
+        color: $blue;
         font-weight: bold;
+        font-size: 16px;
     }
 
     &__list {
@@ -82,11 +83,26 @@
 
     &__link {
         display: inline-block;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
         font-size: 18px;
         text-decoration: underline;
         font-weight: bold;
-        color: #514d56;
+        color: #fff;
+        &:active, &:focus {
+          color: #fff;
+        }
+    }
+    &__link-last {
+        border: 2px solid #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        padding: 8px 14px;
+        margin-top: 15px;
+        &:active, &:focus {
+          color: $blue;
+          text-decoration: none;
+          background-color: #fff;
+        }
     }
 }

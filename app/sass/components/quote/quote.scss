@@ -29,6 +29,7 @@
 
     &__wrapper {
         margin: 0 auto;
+        padding: 0 20px;
     }
 
     &__text {
@@ -72,6 +73,10 @@
 @media (min-width: $md) {
     .quote {
 
+        &__wrapper {
+          padding: 0;
+        }
+        
         &::before {
             width: 89px;
         }

@@ -1,6 +1,6 @@
 
 .blue {
-    background: url('../../../img/photos/bgbig@3x.jpg') no-repeat center;
+    background: url('../../../img/photos/bluebg.jpg') no-repeat center;
     background-size: cover;
 
     &__bg {
@@ -27,23 +27,34 @@
         color: transparentize($color: #fff, $amount: 0.1);
     }
 
+    &__form {
+      width: 100%;
+    }
+
     &__btn {
         margin-bottom: 13px;
         margin-top: 100px;
         @include with-arrow;
         width: 100%;
-        @include orange-btn;
+        /*@include orange-btn;*/
+        @include ghost-btn;
         padding: 18px 0;
         font-size: 18px;
 
-        &::after {
-            width: 100%;
-            height: 100px;
-            top: -110px;
-            left: 0;
-            background: url('../../../img/other/group-12@3x.png') no-repeat center;
-            background-size: contain;
-        }
+
+        &__handwriting {
+
+          margin-top: 80px;
+
+          &::after {
+              width: 294px;
+              height: 63px;
+              top: -80px;
+              left: 0;
+              background: url('../../../img/other/group-12@3x.png') no-repeat center;
+              background-size: contain;
+            }
+          }
     }
 
     &__dollar {
@@ -72,6 +83,16 @@
             transform: rotate(21deg);
         }
     }
+
+    &__form {
+      text-align: center;
+      margin: 0 auto;
+    }
+    &__trial-button {
+      background-color: transparent;
+      border: 1px solid #fff;
+      margin-bottom: 10px;
+    }
 }
 
 
@@ -85,6 +106,10 @@
             width: 100%;
         }
 
+        &__form {
+          width: 100%;
+        }
+
         &__btn {
             width: auto;
             padding: 18px 50px;
@@ -94,6 +119,17 @@
                 left: 50%;
                 transform: translate(-50%, 0);
             }
+
+            &__handwriting {
+
+              margin-top: 100px;
+
+              &::after {
+                  width: 387px;
+                  height: 83px;
+                  top: -100px;
+                }
+              }
         }
     }
 }
@@ -114,6 +150,10 @@
             letter-spacing: 0.2px;
         }
 
+        &__form {
+          width: 70%;
+        }
+
         &__btn {
             padding: 26px 54px;
             font-size: 24px;
@@ -121,26 +161,32 @@
             &_arrow-right {
                 margin-top: 0;
 
-                &::after {
-                    width: 100%;
+                &__handwriting {
+                  &::after {
+                    width: 410px;
+                    height: 83px;
                     left: auto;
-                    right: -104%;
+                    right: -110%;
                     top: -13px;
                     transform: none;
                     background-image: url('../../../img/other/group-15@3x.png');
+                  }
                 }
             }
 
             &_arrow-left {
                 margin-top: 0;
 
-                &::after {
-                    width: 100%;
-                    left: -104%;
-                    right: auto;
-                    top: -13px;
-                    transform: none;
-                    background-image: url('../../../img/other/group-16.svg');
+                &__handwriting {
+                    &::after {
+                        width: 268px;
+                        height: 74px;
+                        left: -74%;
+                        right: auto;
+                        top: 15px;
+                        transform: none;
+                        background-image: url('../../../img/other/group-16.svg');
+                    }
                 }
             }
         }

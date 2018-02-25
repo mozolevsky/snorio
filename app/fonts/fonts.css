@@ -8,7 +8,7 @@
     url("./4577388c-510f-4366-addb-8b663bcc762a.ttf") format("truetype"),
     url("./b0268c31-e450-4159-bfea-e0d20e2b5c0c.svg#b0268c31-e450-4159-bfea-e0d20e2b5c0c") format("svg");
 }
-    
+
 @font-face {
     font-family:"Avenir";
     font-weight: bold;
@@ -20,20 +20,11 @@
     url("./20577853-40a7-4ada-a3fb-dd6e9392f401.svg#20577853-40a7-4ada-a3fb-dd6e9392f401") format("svg");
 }
 
-/* DPDorkDiary */
-@font-face{
-    font-family:"DPDorkDiary";
-    font-weight: normal; 
-    font-style: normal; 
-    src:url("./dpdorkdiary/DPDorkDiary") format("ttf");
-}
-
-
 /* Tiempos */
 @font-face{
     font-family:"TiemposText";
-    font-weight: 600; 
-    font-style: normal; 
+    font-weight: 600;
+    font-style: normal;
     src:url("./tiempos/TiemposTextWeb-Semibold.eot") format("eot"),
     url("./tiempos/TiemposTextWeb-Semibold.woff2") format("woff2"),
     url("./tiempos/TiemposTextWeb-Semibold.woff") format("woff");

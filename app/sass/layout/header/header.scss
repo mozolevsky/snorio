@@ -18,16 +18,61 @@
     }
 
     &__btn {
-        @include blue-btn;
+        @include turquoise-btn;
         padding: 6px 12px 6px 16px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 19px;
     }
-
     &__btn-two {
         @include orange-btn;
         padding: 6px 12px 6px 16px;
         font-size: 16px;
+    }
+    &__btn-blue {
+        @include blue-btn;
+        padding: 6px 12px 6px 16px;
+        font-size: 16px;
+    }
+    &__trial-button {
+      @include blue-btn;
+      display: inline-block;
+      font-size: 14px;
+      width: 100%;
+      height: auto;
+      padding: 0 5px;
+      height: 34px;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+    }
+    &__trial-button-wrapper {
+      display: inline-block;
+      width: 35%;
+    }
+    &__trial-field {
+      font-size: 14px;
+      border: 1px solid #ABB0B2;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: #343434;
+      background-color: #fff;
+      box-sizing: border-box;
+      height: 34px;
+      display: inline-block;
+      margin: 0;
+      width: 50%;
+      padding: 0 10px;
+      text-align: left;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__mc_embed_signup {
+      text-align: right;
+      width: 340px;
     }
 }
 
@@ -76,36 +121,33 @@
             padding-left: 25px;
             font-size: 14px;
             color: #7a838e;
-            font-weight: 700;
 
             background: url('../../../img/other/comment.svg') no-repeat left center;
             background-size: contain;
         }
 
-        &__btn-two {
-            padding: 10px 23px 10px 22px;
-        }
+
     }
 }
 
 @media (min-width: $xl) {
     .header {
-        padding: 20px 0;
+        padding: 15px 0;
 
         &__logo {
             margin-right: 77px;
         }
-        
+
         &__nav-link {
             margin-right: 46px;
             font-size: 14px;
-            font-weight: 700;
-            color: #7a838e;
+            font-weight: 300;
+            color: #99A4B2;
 
             &_active {
-                color: $blue;
+                color: #7a838e;
             }
-            
+
             &:last-child {
                 margin-right: 0;
             }

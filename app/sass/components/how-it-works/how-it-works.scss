@@ -2,10 +2,6 @@
 .how-it-works {
     margin-bottom: 10px;
 
-    &__title-main {
-        text-align: center;
-    }
-
     &__title {
         display: block;
         width: 60%;
@@ -23,7 +19,7 @@
         border-radius: 4px;
         background-color: #ffffff;
         box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.06);
-        
+
         &_green {
             border: solid 1px rgba(80, 213, 179, 0.3);
         }
@@ -45,7 +41,7 @@
 
 @media (min-width: $xl) {
     .how-it-works {
-        margin-bottom: 70px;
+        margin-bottom: 40px;
 
         &__title-main {
             margin-bottom: 50px;

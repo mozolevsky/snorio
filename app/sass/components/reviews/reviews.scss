@@ -39,47 +39,15 @@
         &_last {
             border-bottom: none;
         }
-
-        &_two {
-            padding-bottom: 20px;
-            border-bottom: none;
-            position: relative;
-
-            &::after {
-                content: '';
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-                transform: translate(-50%, 0);
-                width: 36px;
-                height: 1px;
-                background: #dee1e5;
-            }
-        }
     }
     
     &__author-block {
         display: flex;
         align-items: center;
-
-        &_two {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
-        }
-    }
-
-    &__author-block-details {
-        text-align: left;
     }
 
     &__author-img {
         margin-right: 10px;
-
-        &_two {
-            height: 3.5em;
-        }
     }
 
     &__author-name {
@@ -87,29 +55,10 @@
         font-size: 14px;
         line-height: 2.43;
         color: #000000;
-
-        &_two {
-            font-size: 1.12em;
-            font-weight: 700;
-            line-height: 1;
-        }
     }
-
-    &__author-text-raiting {
-        &_two {
-            margin-bottom: 0;
-            font-size: 1em;
-        }
-    }
-
 
     &__item-stars {
         margin-bottom: 8.5px;
-
-        &_two {
-            height: 0.8em;
-            margin-bottom: 0.3em;
-        }
     }
 
     &__item-title {
@@ -118,10 +67,6 @@
         font-weight: 700;
         text-align: left;
         color: #000000;
-
-        &_two {
-            text-align: center;
-        }
     }
 
     &__item-date {
@@ -159,48 +104,13 @@
 
 @media (min-width: $xl) {
     .reviews {
-
-        &__title {
-            &_two {
-                margin-bottom: 50px;
-            }
-        }
-
-        &__item {
-            &_two {
-                &::after {
-                    width: 89px;
-                }
-
-                &:last-child {
-                    &::after {
-                        content: none;
-                    }
-                }
-            }
-        }
-
         &__item-title {
             margin-left: 8px;
             display: inline-block;
-
-            &_two {
-                text-align: center;
-                margin-bottom: 13px;
-                font-size: 22px;
-                line-height: 1.55;
-                color: #333433;
-            }
         }
 
         &__item-desc {
             font-size: 18px;
-        }
-
-        &__author-block {
-            &_two {
-                font-size: 22px;
-            }
         }
 
         &__btn {
