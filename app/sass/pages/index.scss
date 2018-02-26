@@ -2,7 +2,7 @@
 .top-index {
     &__bg {
         height: 64vw;
-        background: url('../../img/other/hero-bg-mobile.jpg') no-repeat center bottom;
+        background: url('../img/other/hero-bg-mobile.jpg') no-repeat center bottom;
         background-size: 100%;
     }
     &__bg {
@@ -10,9 +10,10 @@
     }
     &__marked {
         color: $blue;
-        background: url('../../img/other/underline.svg') bottom left no-repeat;
-        background-size: 100% 0.75rem;
-        padding-bottom: 0.3rem;
+        background: url('../img/other/underline.svg') bottom left no-repeat;
+        background-size: 100% 0.6rem;
+        white-space: nowrap;
+        padding-bottom: 0.4rem;
     }
 
     &__desc {
@@ -173,7 +174,7 @@
         padding-left: 33px;
         font-size: 16px;
         color: $dark-blue;
-        background: url('../../img/other/group-206@3x.png') no-repeat left center;
+        background: url('../img/other/group-206@3x.png') no-repeat left center;
         background-size: 20px 18px;
     }
 }
@@ -271,7 +272,7 @@
         padding: 53px 55px 94px;
         width: 95%;
         margin: 0 auto;
-        background: url('../../img/other/guaranteed.jpg') no-repeat center;
+        background: url('../img/other/guaranteed.jpg') no-repeat center;
         background-size: 100% 100%;
     }
 
@@ -359,13 +360,13 @@
             transform: translate(-50%, 0) rotate(0deg);
             width: 50px;
             height: 50px;
-            background: url('../../img/other/down-arrow-mobile-1.svg') no-repeat center;
+            background: url('../img/other/down-arrow-mobile-1.svg') no-repeat center;
             background-size: contain;
         }
 
         &_arrow-expanded {
             &::after {
-                background: url('../../img/other/down-arrow-mobile-2.svg') no-repeat center;
+                background: url('../img/other/down-arrow-mobile-2.svg') no-repeat center;
             }
         }
     }
@@ -382,7 +383,7 @@
             top: 4px;
             width: 20px;
             height: 18px;
-            background: url('../../img/other/group-27@3x.png') no-repeat center;
+            background: url('../img/other/group-27@3x.png') no-repeat center;
             background-size: 100%;
         }
     }
@@ -396,7 +397,7 @@
         padding-top: 30px;
         padding-bottom: 23px;
         margin-bottom: 30px;
-        background: url('../../img/other/compare-solution-bg.svg') no-repeat center;
+        background: url('../img/other/compare-solution-bg.svg') no-repeat center;
         background-size: contain;
         @include shadow;
     }
@@ -436,7 +437,7 @@
 
     &__active-column-wrapper {
         position: relative;
-        padding-top: 89px;
+        padding-top: 42px;
         padding-bottom: 30px;
         display: inline-block;
     }
@@ -484,7 +485,7 @@
     left: 142.5px;
     top: 0;
     width: 117px;
-    height: 529px;
+    height: 460px;
     background-color: rgba(0, 59, 222, 0.02);
     border: solid 1px $blue;
     align-items: center;
@@ -498,8 +499,8 @@
     &__logo {
         margin-top: 14px;
         margin-bottom: 5px;
-        width: 30px;
-        height: 30px;
+        width: 170px;
+        height: 29px;
     }
 
     &__title {
@@ -575,7 +576,7 @@
 @media (min-width: $md) {
     .top-index {
         margin-bottom: 0;
-        background: url('../../img/other/hero-bg-desktop.jpg') no-repeat right top;
+        background: url('../img/other/hero-bg-desktop.jpg') no-repeat right top;
         background-size: contain;
 
         &__bg-desctop {
@@ -677,7 +678,7 @@
 
         &__bg {
             padding: 40px 60px 60px 10px;
-            background: url('../../img/other/guaranteed.jpg') no-repeat center;
+            background: url('../img/other/guaranteed.jpg') no-repeat center;
             background-size: 100% 100%;
         }
 
@@ -950,7 +951,7 @@
 
        &__solution {
            width: 520px;
-           background: url('../../img/other/compare-solution-desctop.svg') no-repeat center;
+           background: url('../img/other/compare-solution-desctop.svg') no-repeat center;
            background-size: contain;
        }
 
@@ -972,14 +973,14 @@
         }
 
         &__active-column-wrapper {
-            padding-top: 112px;
+            padding-top: 45px;
             padding-bottom: 23px;
         }
    }
 
    .active-column {
         width: 140px;
-        height: 561px;
+        height: 470px;
         left: 146px;
 
        &__title {
@@ -1039,4 +1040,17 @@
         top: -4px;
         right: -4px;
     }
+}
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }

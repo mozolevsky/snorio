@@ -16,4 +16,19 @@
         text-align: center;
         color: #7a838e;
     }
+    &__links {
+      color: #7a838e;
+      margin-bottom: 5px;
+      margin-top: 0;
+      a {
+       font-size: 14px;
+        color: #7a838e;
+      }
+    }
+    &__disclaimer {
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
 }
