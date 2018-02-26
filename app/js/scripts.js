@@ -63,14 +63,6 @@ let slideout = new Slideout({
         this.panel.removeEventListener('click', close);
   });
 
-
-  // timer
-let clock = $('.clock').FlipClock(3600, {
-    countdown: true
-});
-console.log('after timer');
-
-
 //reviews
 let reviewsBtn = document.querySelector('.reviews__btn-js');
 let reviewsBtnText = document.querySelector('.reviews__btn-text-js');
@@ -108,9 +100,21 @@ if (reviewsBtn && reviewsBtnText && reviewsSpinner) {
 
 // table 
 var table = document.querySelector('.table');
+var btnToScrollRight = document.querySelector('.index-table__btn-to-right');
+var tableWrapper = document.querySelector('.table-responsive');
 
 if (table) {
     table.addEventListener('touchstart', function(e) {
         e.stopImmediatePropagation();
+    });
+}
+
+if (btnToScrollRight) {
+    btnToScrollRight.addEventListener('click', function() {
+        tableWrapper.scrollLeft += 150;
+
+        if(tableWrapper.scrollLeft === 740) {
+            btnToScrollRight.style = 'display: none';
+        }
     });
 }

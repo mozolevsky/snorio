@@ -678,6 +678,9 @@ section {
     margin: 0 auto;
     background: url("../img/other/guaranteed.jpg") no-repeat center;
     background-size: 100% 100%; }
+  .guaranteed__logo {
+    width: 200px;
+    height: auto; }
   .guaranteed__desc {
     margin-bottom: 30px; }
   .guaranteed__signature {
@@ -795,6 +798,30 @@ section {
   text-align: center; }
   .index-table__desc {
     margin-bottom: 20px; }
+  .index-table__container-shadow {
+    position: relative; }
+    .index-table__container-shadow::after {
+      content: '';
+      position: absolute;
+      width: 19vw;
+      height: 100%;
+      top: 0;
+      right: 0;
+      -webkit-box-shadow: inset -45px 0px 66px -20px white;
+              box-shadow: inset -45px 0px 66px -20px white; }
+  .index-table__btn-to-right {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 100px;
+    background: url("../../img/other/right-arrow-scroll.svg") no-repeat center;
+    border: none;
+    background-size: contain;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
   .index-table__wrapper {
     width: 1060px;
     font-size: 12px;
@@ -1155,6 +1182,10 @@ section {
     font-size: 14px; }
     .index-table thead th {
       font-size: 14px; }
+    .index-table__btn-to-right {
+      display: none; }
+    .index-table__container-shadow::after {
+      content: none; }
     .index-table__wrapper {
       width: 1140px; }
     .index-table__active-column-wrapper {

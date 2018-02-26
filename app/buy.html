@@ -718,17 +718,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p class="index-table__desc">Compare major features of the most popular snoring products on the market.</p>
                 </div>
             </div>
+        </div>
+        <div class="container index-table__container-shadow">
+            <button class="index-table__btn-to-right"></button>
             <div class="row ">
                 <div class="table-responsive">
                     <div class="index-table__active-column-wrapper">
                         <div class="active-column">
                             <div class="active-column__content">
-                                <img src="img/other/group-42.svg" alt="" class="active-column__logo">
-                                <p class="active-column__title">Optimum Sleep Protocol</p>
-                                <p class="active-column__desc">Anti-snoring exercises</p>
+
+                                <p class="active-column__title"><img src="img/other/osp-logo.svg" alt="" class="active-column__logo"></p>
                                 <img src="img/other/group-156@3x.png" alt="" class="active-column__raiting">
                             </div>
-                            <a href="https://members.optimumsleep.co/register/" class="active-column__btn">Buy Now →</a>
+
                         </div>
                         <table class="table table-sm table-striped index-table__wrapper">
                             <thead>
@@ -1233,6 +1235,13 @@ Thanks for a wonderful program and exceptional customer service!
 	    offset: 80,
 	    easing: 'easeInOutCubic'
     });
+
+    // timer
+    if ($('.clock')) {
+        let clock = $('.clock').FlipClock(3600, {
+            countdown: true
+        });
+    }
 </script>
 </body>
 </html>
